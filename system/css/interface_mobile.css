@@ -1,0 +1,303 @@
+﻿@media only screen and (max-width: 320px) {
+	#stage #interface .superior{ width: 100% !important; }
+	#stage #interface .lateral{ width: 100%; }
+	#stage #galeria section .texto {
+    height: 440px;
+    padding-top: 40px
+	}
+	#stage #galeria section .texto .viewport {
+		height:calc(100% - 102px);
+		top: 40px;
+	}
+	#stage #galeria section .texto .scrollbar{
+		top: 40px;
+	}
+}
+
+@media only screen and (max-width: 425px) {
+
+	#stage #interface #ajuda, #stage #interface #informacoes, #stage #interface #acessibilidade {
+	    position: fixed;
+	    width: 100%;
+	    top: 44px;
+	    left: 0;
+	}
+
+	#areaVideo .fechar,
+	#galeria .fechar{
+		top: -6px;
+		right: -6px;
+		transform: scale(.8);
+	}
+	#galeria .btnZoom{
+		top: 45px;
+		left: 2px;
+		transform: scale(.8);
+	}
+
+	#stage #btnOpcoes{
+		background: #2a2a2a url(img/sprite.png) no-repeat;
+	    position: relative;
+	    top: -6px;
+	    left: -6px;
+	    height: 55px;
+	    width: 55px;
+	    text-indent: -5000px;
+	    z-index: 103;
+	    border: 0;
+	    display: none;
+	    transform: scale(.8);
+	}
+
+	#stage #interface .superior, #stage #interface .lateral .btn, #stage #interface .lateral .btn button{
+	    height: 44px;
+	}
+	#stage #interface .lateral {
+	    top: 44px;
+	}
+	#stage #interface .lateral .btn .icon {
+	    top: -5px;
+	}
+	#stage #interface .lateral .btn button > b {
+	    line-height: 0;
+	}
+	#stage #interface .superior .titulo {
+		height: 48px;
+	}
+
+	#stage[data-autocontraste=true] #interface .superior {
+	    height: 43px;
+	}
+	#interface *:focus, .mejs-container *:focus, #btnOpcoes:focus, .tocar:focus{
+		box-shadow: none;
+	}
+	#areaVideo #moldura{ display: block; }
+
+	#stage #galeria section h4, #stage .lettering {
+	  top: 0px;
+	  left: 44px;
+	  line-height: 18px;
+	}
+	#stage #galeria section h4 {
+    max-width: calc(100% - 118px);
+	}
+
+	#stage #galeria section .video {
+    background-size:30%;
+	}
+}
+
+@media only screen and (max-width: 846px) {
+	.mejs-container, .mejs-captions-layer{
+		width: 100% !important;
+		height: 100% !important;
+	}
+	#areaVideo #contVideo, #stage #areaVideo .video {
+	    position: absolute;
+	    width: 100%;
+	    height: 100%;
+	    top: 0;
+	    left: 0;
+	    margin: 0;
+	}
+	#areaVideo .volumeController, #posterVideo{
+	    position: absolute !important;
+		width: 100%;
+		height: auto;
+		top: 50% !important;
+	    left: 0 !important;
+		transform: translateY(-50%);
+	}
+
+}
+
+@media only screen and (max-width: 572px) {
+	.mejs-captions-position[data-size="s1"], .mejs-captions-position[data-size="s2"], .mejs-captions-position[data-size="s3"] {
+	    width: 430px !important;
+	    margin-left: -235px !important;
+	}
+
+	.mejs-captions-position[data-size="s1"] .mejs-captions-text{font-size: 21px !important;}
+	.mejs-captions-position[data-size="s2"] .mejs-captions-text{font-size: 22px !important;}
+	.mejs-captions-position[data-size="s3"] .mejs-captions-text{font-size: 23px !important;}
+
+	.mejs-captions-position-hover {
+	    bottom: 51px !important;
+	}
+}
+
+@media only screen and (max-width: 475px) {
+	.mejs-controls div.mejs-time-rail{
+		position: absolute;
+		top: -21px;
+		height: 21px !important;
+		background: #2a2a2a;
+		width: 100% !important;
+		padding-top: 0px !important;
+	}
+	.mejs-controls .mejs-time-rail .mejs-time-total{
+		width: 97.2% !important;
+	}
+
+	.mejs-captions-position[data-size="s1"], .mejs-captions-position[data-size="s2"], .mejs-captions-position[data-size="s3"] {
+	    width: 360px !important;
+	    margin-left: -196px !important;
+	}
+
+	.mejs-captions-position[data-size="s1"] .mejs-captions-text{font-size: 19px !important;}
+	.mejs-captions-position[data-size="s2"] .mejs-captions-text{font-size: 20px !important;}
+	.mejs-captions-position[data-size="s3"] .mejs-captions-text{font-size: 21px !important;}
+
+	.mejs-captions-position-hover {
+	    bottom: 71px !important;
+	}
+
+}
+
+
+@media only screen and (max-width: 405px){
+	.mejs-captions-position[data-size="s1"], .mejs-captions-position[data-size="s2"], .mejs-captions-position[data-size="s3"] {
+	    width: 273px !important;
+		margin-left: -154px !important;
+	}
+	.mejs-captions-position[data-size="s1"] .mejs-captions-text, .mejs-captions-position[data-size="s2"] .mejs-captions-text, .mejs-captions-position[data-size="s3"] .mejs-captions-text{
+		font-size: 16px !important;
+		line-height: 21px !important;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	#stage #abertura::before{
+		width: 197px;
+		height: 197px;
+	}
+	#stage #abertura::after{
+		width: 221px;
+		height: 132px;
+	}
+	#stage #mc_titulo_intro{
+		font-size: 26px;
+	}
+	#stage #mc_logo_intro{
+    transform: scale(.8);
+    left: 6px;
+    bottom: 12px;
+	}
+}
+@media (max-width: 659px) {
+	#stage #galeria .main .content{
+	  transform: scale(1);
+	}
+}
+@media (min-width: 660px) and (max-width: 765px) {
+	#stage #galeria .main .content{
+	  transform: scale(0.78);
+	}
+}
+@media (min-width: 766px) and (max-width: 845px) {
+	#stage #galeria .main .content{
+	  transform: scale(0.89);
+	}
+}
+@media (min-width: 846px) {
+	#stage #galeria .main .content{
+	  transform: scale(1);
+	}
+}
+@media (min-width: 660px) and (max-width: 5000px) {
+	#stage #galeria .main .content{
+		width: 846px;
+		height: 476px;
+		left: 50%;
+		top: 50%;
+		right: auto;
+		bottom: auto;
+		margin: -238px 0 0 -423px;
+		overflow: hidden;
+	}
+	#stage #galeria section .texto{
+		height:436px;
+	}
+	#stage #galeria section .legenda{
+		-webkit-transition: right .5s ease-in-out;
+		-moz-transition: right .5s ease-in-out;
+		transition: right .5s ease-in-out;
+		right:0px;
+	}
+	#stage #galeria section .legenda.anima{
+		right:295px;
+	}
+
+	#galeria .btnZoom,
+	#galeria .ampliacao{
+		visibility: hidden;
+	}
+
+	#galeria .stNvGaleria {
+		top: 325px;
+	}
+}
+
+@media (max-height: 475px) and (max-width: 500px) {
+	#areaVideo .fechar{
+		top: -11px;
+		right: -11px;
+		transform: scale(0.6);
+	}
+
+	#stage #btnOpcoes{
+		top: -11px;
+		left: -11px;
+		transform: scale(0.6);
+	}
+}
+@media (max-height: 475px) and (min-width: 501px){
+	#areaVideo .fechar{
+		top: -6px;
+		right: -6px;
+		transform: scale(.8);
+	}
+
+	#stage #btnOpcoes{
+		top: -6px;
+	    left: -6px;
+	    transform: scale(.8);
+	}
+}
+@media (max-height: 475px){
+	.mejs-container .mejs-controls {
+		height: 35px;
+	}
+	.mejs-controls .mejs-button button {
+		height: 23px;
+	}
+	.mejs-controls .mejs-play button {
+		background-position: 4px -5px;
+	}
+	.mejs-controls .mejs-pause button {
+		background-position: -30px -6px;
+	}
+	.mejs-controls .mejs-options .mejs-button#btnPlrSpeed {
+		font-size: 16px;
+		position: relative;
+		top: -2px;
+	}
+	.mejs-controls .mejs-options .mejs-button#btnPlrCC {
+		background-position: -60px 2px;
+	}
+	.mejs-controls .mejs-options .mejs-button#btnPlrCC[data-show=false] {
+		background-position: -60px -33px;
+	}
+	.mejs-controls .mejs-options .mejs-button#btnPlrOpt {
+		background-position: -104px 2px;
+	}
+	.mejs-controls .mejs-options .mejs-button#btnPlrOpt[data-show=false] {
+		background-position: -104px -33px;
+	}
+	.mejs-container .mejs-controls .mejs-time {
+		padding: 3px 3px 0 3px;
+	}
+	.mejs-controls div.mejs-time-rail {
+		padding-top: 7px;
+	}
+}

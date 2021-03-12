@@ -1,0 +1,32 @@
+@media (max-width: 659px) {
+	#interatividade .main .content{
+	  transform: scale(1);
+	}
+}
+@media (min-width: 660px) and (max-width: 765px) {
+	#interatividade .main .content{
+	  transform: scale(0.82);
+	}
+}
+@media (min-width: 766px) and (max-width: 845px) {
+	#interatividade .main .content{
+	  transform: scale(0.92);
+	}
+}
+@media (min-width: 846px) {
+	#interatividade .main .content{
+	  transform: scale(1);
+	}
+}
+@media (min-width: 660px) and (max-width: 5000px) {
+	#interatividade .main .content{
+		width: 846px;
+		height: 476px;
+		left: 50%;
+		top: 50%;
+		right: auto;
+		bottom: auto;
+		margin: -238px 0 0 -423px;
+		overflow: hidden;
+	}
+}

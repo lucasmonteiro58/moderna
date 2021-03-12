@@ -1,0 +1,65 @@
+﻿@font-face {
+	font-family: 'font2';
+	src: url('myriadpro/myriadpro_regular.eot');
+	src: url('myriadpro/myriadpro_regular.ttf');
+}
+@font-face {
+	font-family: 'font2B';
+	src: url('myriadpro/myriadpro_semibold.eot');
+	src: url('myriadpro/myriadpro_semibold.ttf');
+}
+@font-face {
+	font-family: 'font2I';
+	src: url('myriadpro/myriadpro_it.eot');
+	src: url('myriadpro/myriadpro_it.ttf');
+}
+@font-face {
+	font-family: 'font2BI';
+	src: url('myriadpro/myriadpro_semiboldit.eot');
+	src: url('myriadpro/myriadpro_semiboldit.ttf');
+}
+@font-face {
+	font-family: 'font3';
+	src: url('helvetica/helvetica.eot');
+	src: url('helvetica/helvetica.ttf');
+}
+@font-face {
+	font-family: 'font3B';
+	src: url('helvetica/helvetica_bold.eot');
+	src: url('helvetica/helvetica_bold.ttf');
+}
+@font-face {
+	font-family: 'font3I';
+	src: url('helvetica/helvetica_oblique.eot');
+	src: url('helvetica/helvetica_oblique.ttf');
+}
+@font-face {
+	font-family: 'font3BI';
+	src: url('helvetica/helvetica_boldoblique.eot');
+	src: url('helvetica/helvetica_boldoblique.ttf');
+}
+@font-face {
+	font-family: 'font3L';
+	src: url('helvetica/helvetica_light.eot');
+	src: url('helvetica/helvetica_light.ttf');
+}
+@font-face {
+	font-family: 'font3LI';
+	src: url('helvetica/helvetica_lightoblique.eot');
+	src: url('helvetica/helvetica_lightoblique.ttf');
+}
+@font-face {
+  font-family: 'font4';
+  src: url('calibri/calibri.eot');
+  src: url('calibri/calibri.ttf');
+}
+@font-face {
+  font-family: 'font5';
+  src: url('nunito/nunito-semi-bold.eot');
+	src: url('nunito/nunito-semi-bold.ttf');
+}
+@font-face {
+  font-family: 'font5I';
+  src: url('nunito/nunito-semi-bold-italic.eot');
+	src: url('nunito/nunito-semi-bold-italic.ttf');
+}

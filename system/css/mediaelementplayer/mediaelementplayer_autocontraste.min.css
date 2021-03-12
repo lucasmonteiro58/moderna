@@ -1,0 +1,38 @@
+
+#stage[data-autocontraste=true] .mejs-container .mejs-controls {
+	background: #000;
+}
+
+#stage[data-autocontraste=true] .mejs-controls .mejs-time-rail .mejs-time-total {
+	background: #000;
+	border: 1px solid #fff;
+}
+
+#stage[data-autocontraste=true] .mejs-controls .mejs-time-rail .mejs-time-loaded {
+	background: #000;
+}
+
+#stage[data-autocontraste=true] .mejs-controls .mejs-time-rail .mejs-time-current {
+	background: #fffd42;
+}
+
+#stage[data-autocontraste=true] .mejs-controls .mejs-options .mejs-button{
+	background-image: url(controls_autocontraste.svg);
+}
+#stage[data-autocontraste=true] .mejs-container .mejs-controls #btnPlrSpeed {
+    background-image: none;
+}
+/*
+.mejs-controls .mejs-options .mejs-button#btnPlrOpt {
+	background-position: -104px 4px;
+}
+.mejs-controls .mejs-options .mejs-button#btnPlrOpt[data-show=false] {
+	background-position: -104px -30px;
+}
+
+.mejs-controls .mejs-options .mejs-button#btnPlrCC {
+	background-position: -61px 5px;
+}
+.mejs-controls .mejs-options .mejs-button#btnPlrCC[data-show=false] {
+	background-position: -61px -30px;
+}*/

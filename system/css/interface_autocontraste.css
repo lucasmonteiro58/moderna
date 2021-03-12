@@ -1,0 +1,229 @@
+﻿#stage[data-autocontraste=true] #btnOpcoes{
+	background-color:#000;
+	background-image:url(img/sprite_autocontraste.png);
+}
+#stage[data-autocontraste=true] #btnOpcoes[aria-expanded=true]{
+    border-bottom: 1px solid #fff;
+}
+#stage[data-autocontraste=true] #btnOpcoes[aria-expanded=false]{
+    border: 1px solid #fff;
+    border-left:none;
+}
+
+#stage[data-autocontraste=true] #interface .superior{
+	background:#000;
+	border-bottom: 1px solid #fff;
+	border-right: 1px solid #fff;
+	height:54px;
+	color:#fff;
+	margin-left: 0px;
+}
+
+#stage[data-autocontraste=true] #interface .lateral{
+	background:#000;
+	border-right: 1px solid #fff;
+}
+
+#stage[data-autocontraste=true] #interface .lateral .btn:hover{
+	background:#fffd42;
+}
+#stage[data-autocontraste=true] #interface .lateral .btn.hover{
+	background:#fffd42;
+}
+#stage[data-autocontraste=true] #interface .lateral .btn .icon{
+	background-image:url(img/sprite_autocontraste.png);
+}
+#stage[data-autocontraste=true] #interface .lateral .btn:hover button > b, #stage[data-autocontraste=true] #interface .lateral .btn.hover button > b{
+	color: #000;
+}
+
+#stage[data-autocontraste=true] #interface .boxTexto{
+	color:#fff;
+}
+
+#stage[data-autocontraste=true] #interface .boxTexto .content {
+	background:#000;
+    border-right: 1px solid #fff;
+    margin-left: -1px;
+}
+
+#stage[data-autocontraste=true] #interface .boxTexto .track {
+	background:#000;
+	border:1px solid #fff;
+}
+#stage[data-autocontraste=true] #interface .boxTexto .thumb {
+	background:#fff;
+}
+#stage[data-autocontraste=true] #interface .boxTexto h3{
+	color:#fff;
+}
+
+#stage[data-autocontraste=true] #interface #informacoes span{
+	background-image: url(img/logos_autocontraste.png);
+}
+
+#stage[data-autocontraste=true] #interface #acessibilidade .content{ margin-left: 0px; border-right: 0px solid #fff;}
+
+#stage[data-autocontraste=true] #interface #acessibilidade .content:last-of-type{
+	margin-left: 0px;
+}
+#stage[data-autocontraste=true] #interface #acessibilidade #slideAcessivel{
+	background: #000;
+	border-right: 1px solid #fff;
+	margin-left: -1px;
+}
+
+#stage[data-autocontraste=true] #interface #acessibilidade .bloco h4, #stage[data-autocontraste=true] #interface #acessibilidade .bloco label{
+	color:#fff;
+}
+
+#stage[data-autocontraste=true] #interface #acessibilidade .bloco label{
+	color:#fff;
+}
+#stage[data-autocontraste=true] #interface #acessibilidade .bloco label.disabled {
+    color: #b0b0b0;
+}
+#stage[data-autocontraste=true] #interface #acessibilidade .bloco label .checkbox i{
+	background:#000;
+}
+
+#stage[data-autocontraste=true] #interface #acessibilidade .bloco label .checkbox[aria-checked=true]{
+	background:#fffd42;
+}
+#stage[data-autocontraste=true] #interface #acessibilidade .bloco label .radio{
+	background-image: url(img/sprite_autocontraste.png);
+}
+#stage[data-autocontraste=true] #interface #acessibilidade .bloco label .radio[aria-checked=false]{
+	background:none;
+}
+#stage[data-autocontraste=true] #interface #acessibilidade .bloco label.disabled .radio[aria-checked=true]{
+	background:none;
+}
+
+#stage[data-autocontraste=true] #interface .boxGaleria{
+	background:#000;
+}
+
+#stage[data-autocontraste=true] #interface .boxGaleria figure figcaption{
+	color:#fff;
+}
+
+#stage[data-autocontraste=true] #interface .boxGaleria  .track {
+	background:#000;
+	border:1px solid #fff;
+}
+#stage[data-autocontraste=true] #interface .boxGaleria  .thumb {
+	background:#fff;
+}
+
+#stage[data-autocontraste=true] #galeria section h4, #stage[data-autocontraste=true] .lettering{
+	color: #fff;
+	background:#000;
+	border:1px solid #fff;
+	border-left:none;
+    padding: 14px 15px 10px 15px;
+}
+#stage[data-autocontraste=true] #galeria section h4.invert, #stage[data-autocontraste=true] .lettering.invert, #stage[data-autocontraste=true] #galeria section .legenda.invert{
+	background:#000;
+}
+#stage[data-autocontraste=true] #galeria section .legenda, #stage[data-autocontraste=true] .legenda{
+	color: #fff;
+	background:#000;
+	border:1px solid #fff;
+	border-right:none;
+}
+
+#stage[data-autocontraste=true] #galeria section .btMaisMenos{
+	background:#000;
+	color: #fff;
+    border: 1px solid #fff;
+}
+#stage[data-autocontraste=true] #galeria section .btMaisMenos::after{
+	content: '';
+	background-image: url(img/sprite_autocontraste.png);
+}
+#stage[data-autocontraste=true] #galeria section .texto{
+	background:#000;
+	border-left:1px solid #fff;
+	color:#fff;
+}
+#stage[data-autocontraste=true] #galeria section .texto::before{
+	content: '';
+	background:#000;
+	border-left:1px solid #fff;
+}
+#stage[data-autocontraste=true] #galeria section .texto::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height:557px;
+	border-bottom:1px solid #fff;
+}
+#stage[data-autocontraste=true] #galeria section .texto p span{
+	color:#fffd42;
+}
+#stage[data-autocontraste=true] .fechar{
+	background-image:url(img/sprite_autocontraste.png);
+	border:1px solid #fff;
+}
+#stage[data-autocontraste=true] .visual2{	background:url(img/sprite.png) no-repeat; background-position: -571px -182px; top: -1px;}
+
+#stage[data-autocontraste=true] .stNvGaleria{
+	background-image:url(img/sprite_autocontraste.png);
+	border:1px solid #fff;
+}
+#stage[data-autocontraste=true] .stNvGaleria.stPrev{
+	background-position:-450px -278px;
+	left:0;
+}
+#stage[data-autocontraste=true] .stNvGaleria.stNext{
+	background-position:-505px -278px;
+	right:0;
+}
+
+#stage[data-autocontraste=true] .btnZoom{
+	background-color:#000;
+	background-image:url(img/sprite_autocontraste.png);
+	border:1px solid #fff;
+}
+#stage[data-autocontraste=true] .btnZoom[data-status=mais]{
+	background-position:-191px -138px;
+}
+#stage[data-autocontraste=true] .btnZoom[data-status=menos]{
+	background-position:-191px -189px;
+}
+
+#stage[data-autocontraste=true] .btnPadrao{
+	background:#fff;
+	color:#000;
+}
+
+#stage[data-autocontraste=true] .feedback section{
+	background:#000;
+	border:1px solid #fff;
+}
+#stage[data-autocontraste=true] .feedback section article{
+	color:#fff;
+}
+
+#stage[data-autocontraste=true] .feedback section article h3{
+	color:#fff;
+}
+
+#stage[data-autocontraste=true] .botao.fechar {
+	background-image: none;
+	border: 0;
+	border-bottom: #dee7e8 4px solid;
+}
+
+#OEDlog{
+	position: absolute; bottom:0; right:0;
+	width:400px; height:100px; background:rgba(0,0,0,.2);
+	border:1px dashed #666;
+	overflow:auto;
+}
+#OEDlog span{
+	display: block;
+}
