@@ -1,4 +1,5 @@
-﻿Main.titulo = 'PROTÓTIPO HTML';
+﻿Main.titulo = 'Congresso de Viena';
+Main.subtitulo = '- História -'
 Main.tituloWithAudio = false;
 Main.hasPreRun = false;
 //Main.log = true;

@@ -6,6 +6,7 @@ var	mobi_w = 846;
 var	mobi_h = 476;
 var clicouBotao = false;
 
+
 var Main = {
 	titulo: '',
 	log: false,
@@ -17,6 +18,7 @@ var Main = {
 	isTablet: false,
 
 	init: function(){
+		InterfaceController.init();
 		if(Main.log){
 			window.console.log = showLog
 			$('#stage').append('<pre id="OEDlog"></pre>');
@@ -24,6 +26,7 @@ var Main = {
 		this.mobileInit();
 
 		$('#stage .tocar').unbind('tap keydown').bind('tap keydown',function(e){
+			console.log(e)
 			if (e.keyCode === 13 || e.type === 'tap') {
 				$('#stage .tocar').unbind('tap keydown').fadeOut(500);
 				$('#stage').attr('data-os',SYSTEM).attr('data-browser',BROWSER);
@@ -45,7 +48,16 @@ var Main = {
 			}
 		});
 
+				// BOTÃO CONFERIR
+
+				$('#btnConferir').unbind('keydown tap').bind('keydown tap', function(e)
+				{
+					InterfaceController.openVideo();					
+				} );
+
+
 		$('.titulo').html(Main.titulo);
+		$('.sub_titulo').html(Main.subtitulo);
 		//$('.titulo.noBR').html(Functions.strip_tags(Main.titulo,"<i><sup>"));
 		$('.titulo.noBR').html(Main.titulo,"<i><sup>");
 		$('title').html(Functions.strip_tags(Main.titulo));

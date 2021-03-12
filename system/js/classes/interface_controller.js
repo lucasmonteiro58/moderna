@@ -30,7 +30,7 @@
 	naoSelecionou: false,
 	naoSelecionouTxt: "",
 
-	init: function(ev){
+	init: function(){
 		var that = this;
 
 		setVolume();
@@ -78,6 +78,8 @@
 			}
 		} );
 
+
+
 		// BOTÃO MENU
 		$('#btnMenu').unbind('keydown tap').bind('keydown tap', function(e)
 		{
@@ -109,13 +111,13 @@
 				if(!that.isMuted){
 					mute();
 					that.isMuted = true;
-					$('#btnSom').attr('data-status','off').attr('aria-label','Som desativado').attr('aria-selected',true);
-					$('#btnSom b').html('Som desativado');
+					$('#btnSom').attr('data-status','off').attr('aria-label','Som Desativado').attr('aria-selected',true);
+					$('#btnSom b').html('Som Desativado');
 				}else{
 					unmute();
 					that.isMuted = false;
-					$('#btnSom').attr('data-status','on').attr('aria-label','Som ativado').attr('aria-selected',false);
-					$('#btnSom b').html('Som ativado');
+					$('#btnSom').attr('data-status','on').attr('aria-label','Som Ativado').attr('aria-selected',false);
+					$('#btnSom b').html('Som Ativado');
 				}
 				that.closeTabs();
 			}
@@ -484,6 +486,29 @@
 			'margin-top':-(h / 2)+'px',
 			'margin-left':-(w / 2)+'px'
 		});
+	},
+	openQuestion: function(){
+		$('#questionSection').fadeIn(500);
+		$('#questionSection section .title').html(Textos.question_title)
+		$('#questionSection section .subtitle').html(Textos.question_subtitle)
+		$('#questionSection section .question_content').html(Textos.question_content)
+		$('#questionSection section .question_font').html(Textos.question_font)
+		$('#questionSection section .question_acesso').html(Textos.question_acesso)
+		$('#questionSection section .image_section .img_question ').attr('src' , Textos.image_src)
+		$('#questionSection section .image_section span .image_font ').html(Textos.image_font)
+		$('#questionSection section .image_section span .image_acesso ').html(Textos.image_acesso)
+		$('#questionSection section .question_enunciado').html(Textos.question_enunciado)
+		$('#questionSection section .question_item_a').html(Textos.question_item_a)
+		$('#questionSection section .question_item_b').html(Textos.question_item_b)
+		$('#questionSection section .question_item_c').html(Textos.question_item_c)
+		$('#questionSection section .question_item_d').html(Textos.question_item_d)
+	},
+	closeQuestion: function() {
+		$('#questionSection').hide();
+	},
+	openVideo: function() {
+		InterfaceController.closeQuestion();
+		InterfaceController.closePopup();
 	},
 	ampliaGaleria: function(e){
 		if (e.keyCode === 13 || e.type === 'tap') {

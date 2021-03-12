@@ -121,5 +121,6 @@ function showFeedback(callback)
 		}
 	});
 	$('.feedback *').attr('tabindex',-1).attr('aria-hidden',true);
-	InterfaceController.openFeedback('.feedback');
+//	InterfaceController.openFeedback('.feedback');
+	InterfaceController.openQuestion();
 }

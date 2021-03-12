@@ -45,30 +45,26 @@
 		<!--
 			NÃO ALTERAR - INÍCIO
 			-->
-		<div class='abs' id='abertura'>
+		<!-- <div class='abs' id='abertura'>
+			<span class="decoration_0"></span>
+			<span class="decoration_1"></span>
+			<span class="decoration_2"></span>
+			<span class="decoration_3"></span>
 			<div id="mc_logo_intro"> </div>
-			<div class="abs" id="mc_titulo_intro" aria-hidden='true'><span class='titulo'></span></div>
+			<div class="abs" id="mc_titulo_intro" aria-hidden='true'><div class='titulo'></div> <div class='sub_titulo'></div></div>
+		
 			<div id="html5Loader"></div>
 			<script>Main.initPreloader();</script>
 		</div>
-		<button class='tocar'>INICIAR</button>
+		<button class='tocar'>INICIAR</button> -->
 		<button id='btnOpcoes' class='displayNone' aria-controls='interface' aria-expanded='false'>Menu</button>
 		<div id='interface' class='abs' role='region' data-status='off' aria-expanded='false' aria-activedescendant="btnOpcoes" aria-labelledby='btnOpcoes' tabindex='-1'>
 			<ul class='lateral'>
 				<li class='btn '> <button id='btnFases' > <i class='icon icon-fase'></i> <b>Fases</b> </button> </li>
 				<li class='btn '> <button id='btnMenu' > <i class='icon icon-menu'></i> <b>Início</b> </button> </li>
 				<li class='btn '> <button id='btnRoteiro' > <i class='icon icon-roteiro'></i> <b>Roteiro de estudos</b> </button> </li>
-				<li class='btn '> <button id='btnSom'  data-status='on' aria-selected='false'> <i class='icon icon-som'></i> <b>Som ativado</b> </button> </li>
-				<li class='btn '>
-					<button id='btnAjuda' aria-controls='ajuda' aria-expanded='false'> <i class='icon icon-ajuda'></i> <b>Ajuda</b> </button>
-					<div id='ajuda' class='boxTexto' data-status='closed' role='group' aria-expanded='false' aria-labelledby="btnAjuda">
-						<div class='content'>
-							<a href='javascript:;' title='FECHAR' class='fechar visual2' aria-hidden='true' >&lt;</a>
-							<div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
-							<div class="viewport" tabindex='0'> <div class="overview"> </div> </div>
-						</div>
-					</div>
-				</li>
+				<li class='btn '> <button id='btnReiniciar' > <i class='icon icon-reiniciar'></i> <b>Reiniciar</b> </button> </li>
+				<li class='btn '> <button id='btnSom'  data-status='on' aria-selected='false'> <i class='icon icon-som'></i> <b>Som Ativado</b> </button> </li>
 				<li class='btn '>
 					<button id='btnAcessibilidade' aria-controls='acessibilidade' aria-expanded='false'> <i class='icon icon-acessibilidade'></i> <b>Acessibilidade</b> </button>
 					<div id='acessibilidade' class='boxTexto' data-status='closed' role='group' aria-expanded='false' aria-labelledby="btnAcessibilidade">
@@ -118,6 +114,17 @@
 					</div>
 				</li>
 				<li class='btn '>
+					<button id='btnAjuda' aria-controls='ajuda' aria-expanded='false'> <i class='icon icon-ajuda'></i> <b>Ajuda</b> </button>
+					<div id='ajuda' class='boxTexto' data-status='closed' role='group' aria-expanded='false' aria-labelledby="btnAjuda">
+						<div class='content'>
+							<a href='javascript:;' title='FECHAR' class='fechar visual2' aria-hidden='true' >&lt;</a>
+							<div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+							<div class="viewport" tabindex='0'> <div class="overview"> </div> </div>
+						</div>
+					</div>
+				</li>
+				
+				<li class='btn '>
 					<button id='btnCreditos' aria-controls='informacoes' aria-expanded='false'> <i class='icon icon-creditos'></i> <b>Créditos</b> </button>
 					<div id='informacoes' class='boxTexto' data-status='closed' role='group' aria-expanded='false' aria-labelledby="btnCreditos">
 						<div class='content'>
@@ -128,13 +135,65 @@
 						</div>
 					</div>
 				</li>
-				<li class='btn '> <button id='btnReiniciar' > <i class='icon icon-reiniciar'></i> <b>Reiniciar</b> </button> </li>
+			
 			</ul>
 			<div class='filtro displayNone'></div>
-			<div class='superior'> <p class='titulo noBR' aria-hidden='true' ></p> </div>
+			<div class='superior'> <span class="logo_supeior"></span> </div>
 		</div>
-		<div id='galeria' tabindex='-1' class='displayNone'> </div>
+		<!-- <div id='galeria' tabindex='-1' class='displayNone'> </div> -->
+		<div id="questionSection" class='question displayNone'>
+			<span class="decoration_0"></span>
+			<span class="decoration_1"></span>
+			<span class="decoration_2"></span>
+			<span class="decoration_3"></span>
+			<div id="mc_logo_intro"> </div>
+			<section> 				
+				<div class="title"></div>
+				<div class="subtitle"></div> 
+				<div class="question_content"></div>
+				<div class="question_font"></div>
+				<div class="question_acesso"></div>
+				<div class="image_section">
+					<img class="img_question" src="" alt="">
+					<span>
+						<span class="image_font"></span>
+						<span class="image_acesso"></span>
+					</span>				
+				</div>	
+				<div class="question_enunciado"></div>
+				<div class="questions_items question_item_a"></div>
+				<div class="questions_items question_item_b"></div>
+				<div class="questions_items question_item_c"></div>
+				<div class="questions_items question_item_d"></div>
+				<div class="question_fotter">
+					<div class="qual_item">
+						<div class="text">Qual item você acha que está correto?</div>
+						<div class="items">
+							<div class="item item-a">A</div>
+							<div class="item item-b">B</div>
+							<div class="item item-c">C</div>
+							<div class="item item-d">D</div>
+						</div>
+					</div>
+					<div class="buttom">
+						<button id="btnConferir">Conferir</button>
+					</div>
+				</div>
+			</section>
+		</div>
+		<div id="videoSection" class='video_section displayNone'>
+			<span class="decoration_0"></span>
+			<span class="decoration_1"></span>
+			<span class="decoration_2"></span>
+			<span class="decoration_3"></span>
+			<div id="mc_logo_intro"> </div>
+		</div>
 		<div class='feedback displayNone'>
+			<span class="decoration_0"></span>
+			<span class="decoration_1"></span>
+			<span class="decoration_2"></span>
+			<span class="decoration_3"></span>
+			<div id="mc_logo_intro"> </div>
 			<section> <article> <blockquote></blockquote> <footer></footer> </article> </section>
 		</div>
 		<!--
@@ -155,5 +214,10 @@
 	</div>
 </div>
 <div class='msgRotate'></div>
+<span class="decoration_0"></span>
+<span class="decoration_1"></span>
+<span class="decoration_2"></span>
+<span class="decoration_3"></span>
+<div id="mc_logo_intro"> </div>
 </body>
 </html>
