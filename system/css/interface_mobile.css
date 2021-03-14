@@ -18,7 +18,164 @@
   }
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 769px) {
+  .decoration_0 {
+    width: 315px;
+    height: 343px;
+  }
+
+  .decoration_1 {
+    width: 277px;
+    height: 272px;
+  }
+
+  .decoration_2 {
+    width: 119px;
+    height: 96px;
+  }
+
+  .decoration_3 {
+    width: 116px;
+    height: 93px;
+  }
+
+  #stage #mc_logo_intro {
+    left: -9px;
+    top: 1px;
+    transform: scale(0.5);
+  }
+
+  .question section {
+    margin-left: 20px;
+    flex-direction: column;
+    width: 75vw;
+    height: 55vh;
+    padding: 10px 42px;
+  }
+
+  .question section .title {
+    font-size: 24px;
+  }
+
+  .question section .subtitle {
+    font-size: 16px;
+  }
+
+  .question section .question_content {
+    font-size: 16px;
+  }
+
+  .question section .question_font {
+    font-size: 12px;
+  }
+
+  .question section .question_acesso {
+    font-size: 12px;
+  }
+
+  .question section .image_section span .image_font {
+    font-size: 12px;
+  }
+
+  .question section .image_section span {
+    font-size: 12px;
+  }
+
+  .question section .question_enunciado {
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: justify;
+  }
+
+  .question section .questions_items {
+    font-size: 16px;
+    border: 1px solid rgba(74, 70, 42, 0.76);
+    padding: 7px 9px;
+    text-align: justify;
+    border-radius: 15px;
+  }
+
+  .question section .question_fotter .qual_item .text {
+    font-size: 20px;
+  }
+
+  .question section .question_fotter .buttom button {
+    font-size: 21px;
+    width: 164px;
+  }
+
+  #areaVideo #contVideo .video-left-content {
+    display: none;
+  }
+
+  #areaVideo #contVideo .video-right-content {
+    display: none;
+  }
+
+  .popUpVideo section button {
+    font-size: 15px;
+    width: 80%;
+  }
+
+  .popUpVideo section .buttton-items {
+    width: 250px;
+  }
+
+  .popUpVideo section .buttton-items button {
+    font-size: 18px;
+    width: 45px;
+    height: 45px;
+  }
+
+  .popUpVideo section .buttons-section {
+    margin-top: 10px;
+    gap: 10px;
+  }
+}
+
+@media only screen and (max-width: 641px) {
+  .decoration_0 {
+    width: 240px;
+    height: 226px;
+  }
+
+  .decoration_1 {
+    width: 197px;
+    height: 163px;
+  }
+
+  .decoration_2 {
+    width: 96px;
+    height: 76px;
+  }
+
+  .decoration_3 {
+    width: 95px;
+    height: 73px;
+  }
+
+  #stage #mc_logo_intro {
+    left: -35px;
+    top: 1px;
+    transform: scale(0.4);
+  }
+
+  .question section .question_fotter .qual_item .items {
+    width: 307px;
+  }
+
+  .question section .question_fotter .qual_item .items .item {
+    font-size: 25px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .question section .question_fotter .buttom button {
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 426px) {
   .question section {
     width: 100vw;
     margin-left: 0;
@@ -107,6 +264,45 @@
     justify-content: center;
   }
 
+  #areaVideo #contVideo .video-left-content {
+    display: none;
+  }
+
+  #areaVideo #contVideo .video-right-content {
+    display: none;
+  }
+
+  .popUpVideo section {
+    width: 90%;
+  }
+
+  .popUpVideo section button {
+    font-size: 15px;
+    width: 80%;
+  }
+
+  .popUpVideo section .buttton-items {
+    width: 250px;
+  }
+
+  .popUpVideo section .buttton-items button {
+    font-size: 18px;
+    width: 45px;
+    height: 45px;
+  }
+
+  .popUpVideo section .buttons-section {
+    margin-top: 10px;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .openMenu {
+    left: 296px !important;
+  }
+
+  /* ////////////////////////////////////////////////////////////////////// */
+
   #stage #interface #ajuda,
   #stage #interface #informacoes,
   #stage #interface #acessibilidade {
@@ -162,7 +358,7 @@
   }
 
   #stage[data-autocontraste="true"] #interface .superior {
-    height: 43px;
+    height: 55px;
   }
   #interface *:focus,
   .mejs-container *:focus,
@@ -433,5 +629,42 @@
   }
   .mejs-controls div.mejs-time-rail {
     padding-top: 7px;
+  }
+}
+
+@media only screen and (max-width: 641px) {
+  /* .mejs-container,
+  .mejs-captions-layer {
+    width: 70% !important;
+    height: 100% !important;
+  } */
+
+  #areaVideo #contVideo {
+    transform: scale(0.7);
+    margin-top: 20px;
+  }
+
+  #areaVideo #contVideo .video-left-content {
+    display: none;
+  }
+
+  #areaVideo #contVideo .video-right-content {
+    display: none;
+  }
+
+  .popUpVideo section {
+    width: 72%;
+    height: 255px;
+  }
+
+  .popUpVideo section .buttons-section {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  #areaVideo #contVideo {
+    transform: scale(1);
+    margin-top: 0px;
   }
 }
