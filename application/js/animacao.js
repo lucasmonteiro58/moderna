@@ -67,7 +67,7 @@ function reiniciar()
 	stopAllMedia();
 	InterfaceController.closeGaleria();
 	$('.feedback, #areaVideo').hide();
-	showFeedback(function(){ executaVideo('floresta_conservada'); });
+	showFeedback(function(){ executaVideo('1-introducao'); });
 }
 	
 function executaVideo(nomeVideo, _callBackEnd)
@@ -77,10 +77,24 @@ function executaVideo(nomeVideo, _callBackEnd)
 	var funcEnd = function(e)
 	{
 		if (e.keyCode === 13 || e.keyCode === 88 || e.type === 'tap' || e.type === 'ended' ) {
-			stopAllMedia();
-			$('#areaVideo').fadeOut(500);
-			if( typeof(_callBackEnd) == 'function' ) _callBackEnd();
+		//stopAllMedia();
+		//	$('#areaVideo').fadeOut(500);
+		// showFeedback(_callBackEnd)
+			//if( typeof(_callBackEnd) == 'function' ) _callBackEnd();
 			//$('#interface #btnAcessibilidade').hide();
+			// console.log('aaaa')
+			if (nomeVideo ==='1-introducao') {
+				InterfaceController.openPopUpVideo1();
+			} else if(nomeVideo === '2-explicacao_texto') {
+				InterfaceController.openPopUpVideo2();
+			} else if (nomeVideo === '3-leitura-enunciado') {
+				InterfaceController.openPopUpVideo3();
+			} else if (nomeVideo === '8-encerramento') {
+				InterfaceController.openPopUpVideo4()
+			} else {
+				InterfaceController.openPopUpVideo3();
+			}
+			
 		}
 	}	
 	

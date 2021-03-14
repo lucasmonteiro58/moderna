@@ -52,7 +52,7 @@ var Main = {
 
 				$('#btnConferir').unbind('keydown tap').bind('keydown tap', function(e)
 				{
-					InterfaceController.openVideo();					
+					InterfaceController.openVideoIntroducao();					
 				} );
 
 

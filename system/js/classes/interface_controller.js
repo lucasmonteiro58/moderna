@@ -46,6 +46,15 @@
 			}
 		});
 
+		
+		// BOTÃO FECHAR POPUPVIDEO
+		$('.fechar_popup').unbind('keydown tap').bind('keydown tap', function(e)
+		{
+			if (e.keyCode === 13 || e.type === 'tap') {
+				InterfaceController.closePopUpVideo();
+			}
+		} );
+
 		// ABRE E FECHA A INTERFACE
 		$('#btnOpcoes').show().unbind('keydown tap').bind('keydown tap', function(e)
 		{
@@ -304,6 +313,11 @@
 				}
 				that.btnReiniciarCallback();
 				that.closeAbas(e);
+				//$('#questionSection').scrollTop(0);
+
+				console.log('reniciou')
+				//window.location.reload()
+				//document.getElementById("questionSection").scrollIntoView();
 			}
 		} );
 
@@ -332,7 +346,8 @@
 	btnMenuCallback: function(){},
 	btnRoteiroCallback: function(){},
 	btnAjudaCallback: function(){},
-	btnReiniciarCallback: function(){},
+	btnReiniciarCallback: function(){
+	},
 	openAbas: function(e){
 		var that = InterfaceController;
 
@@ -506,9 +521,57 @@
 	closeQuestion: function() {
 		$('#questionSection').hide();
 	},
-	openVideo: function() {
+	openVideoIntroducao: function() {
 		InterfaceController.closeQuestion();
-		InterfaceController.closePopup();
+		InterfaceController.closePopUpVideo();
+		$('#videoSection').fadeIn(100);
+		executaVideo('1-introducao');	
+	},
+	openVideoExplicacaoTexto: function() {
+		InterfaceController.closePopUpVideo();
+		executaVideo('2-explicacao_texto');	
+	},
+	openVideoEnunciado: function() {
+		InterfaceController.closePopUpVideo();
+		executaVideo('3-leitura-enunciado');	
+	},
+	openVideoItemA: function() {
+		InterfaceController.closePopUpVideo();
+		executaVideo('4-item_a');	
+	},
+	openVideoItemB: function() {
+		InterfaceController.closePopUpVideo();
+		executaVideo('5-item_b');	
+	},
+	openVideoItemC: function() {
+		InterfaceController.closePopUpVideo();
+		executaVideo('6-item_c');	
+	},
+	openVideoItemD: function() {
+		InterfaceController.closePopUpVideo();
+		executaVideo('7-item_d');	
+	},
+	openVideoEncerramento: function() {
+		InterfaceController.closePopUpVideo();
+		executaVideo('8-encerramento');	
+	},
+	openPopUpVideo1: function() {
+		$('#popUpVideo1').fadeIn(100);
+	},
+	openPopUpVideo2: function() {
+		$('#popUpVideo2').fadeIn(100);
+	},
+	openPopUpVideo3: function() {
+		$('#popUpVideo3').fadeIn(100);
+	},
+	openPopUpVideo4: function() {
+		$('#popUpVideo4').fadeIn(100);
+	},
+	closePopUpVideo: function() {
+		$('#popUpVideo1').hide();
+		$('#popUpVideo2').hide();
+		$('#popUpVideo3').hide();
+		$('#popUpVideo4').hide();
 	},
 	ampliaGaleria: function(e){
 		if (e.keyCode === 13 || e.type === 'tap') {
@@ -946,6 +1009,7 @@ function tamanhoAbaSuperiorOpen(){
 	}else{
 		$('#stage #interface .superior').css('margin-left','0px');
 	}
+	$('#btnOpcoes').addClass( "openMenu" );
 }
 
 function tamanhoAbaSuperiorClose(){
@@ -956,6 +1020,7 @@ function tamanhoAbaSuperiorClose(){
 	}
 
 	$('#stage #interface .superior').css('margin-left','0px');
+	$('#btnOpcoes').removeClass( "openMenu" );
 }
 
 var creditoStack = []

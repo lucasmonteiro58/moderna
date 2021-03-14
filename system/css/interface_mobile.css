@@ -19,6 +19,94 @@
 }
 
 @media only screen and (max-width: 425px) {
+  .question section {
+    width: 100vw;
+    margin-left: 0;
+    height: 63vh;
+    padding: 10px 40px;
+    overflow-x: none;
+  }
+
+  .question section .title {
+    font-size: 20px;
+  }
+
+  .question section .subtitle {
+    font-size: 16px;
+  }
+
+  .question section .question_content {
+    font-size: 16px;
+    text-align: justify;
+    margin-bottom: 20px;
+  }
+
+  .question section .question_font {
+    font-size: 12px;
+  }
+
+  .question section .question_acesso {
+    font-size: 12px;
+  }
+
+  .question section .image_section {
+    margin-top: 30px;
+  }
+
+  .question section .image_section .img_question {
+    width: 100%;
+  }
+
+  .question section .image_section span .image_font {
+    font-size: 12px;
+  }
+
+  .question section .image_section span {
+    font-size: 12px;
+  }
+
+  .question section .question_enunciado {
+    font-size: 16px;
+    margin-top: 20px;
+    text-align: justify;
+  }
+
+  .question section .questions_items {
+    font-size: 16px;
+    border: 1px solid rgba(74, 70, 42, 0.76);
+    padding: 7px 9px;
+    text-align: justify;
+    border-radius: 15px;
+  }
+
+  .question section .question_fotter .qual_item .text {
+    font-size: 20px;
+  }
+
+  .question section .question_fotter {
+    flex-direction: column;
+  }
+
+  .question section .question_fotter .qual_item {
+    width: 100%;
+    text-align: center;
+  }
+
+  .question section .question_fotter .qual_item .items {
+    width: 280px;
+  }
+
+  .question section .question_fotter .qual_item .items .item {
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .question section .question_fotter .buttom {
+    width: 100%;
+    justify-content: center;
+  }
+
   #stage #interface #ajuda,
   #stage #interface #informacoes,
   #stage #interface #acessibilidade {

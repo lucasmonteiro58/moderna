@@ -1,4 +1,4 @@
-﻿Main.titulo = 'Congresso de Viena';
+﻿Main.titulo = 'Protótipo Moderna';
 Main.subtitulo = '- História -'
 Main.tituloWithAudio = false;
 Main.hasPreRun = false;

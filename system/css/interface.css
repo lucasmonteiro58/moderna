@@ -341,10 +341,23 @@ button {
   left: 253px;
   top: 10px;
 }
+
 #stage #btnOpcoes[aria-expanded="false"] {
   background-position: -192px -63px;
   left: -10px;
   top: 11px;
+}
+
+.openMenu {
+  left: 358px !important;
+}
+
+#stage #btnOpcoes[aria-expanded="true"] {
+  background-position: -135px -1px;
+  filter: brightness(60%);
+  transform: scale(0.7);
+  left: 253px;
+  top: 10px;
 }
 
 #stage #interface .superior {
@@ -487,7 +500,7 @@ button {
 }
 #stage #interface .lateral .btn button > b {
   font-family: "sourceSans";
-  font-size: 18px;
+  font-size: 20px;
   line-height: 16px;
   color: #4a462a;
 }
@@ -1478,19 +1491,81 @@ button {
   top: 0;
   left: 0;
   margin: 0;
-  background: #151515;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
 }
 #areaVideo .fechar {
   right: 0;
 }
-#areaVideo #contVideo,
+
+.content_video {
+  display: flex;
+  justify-items: center;
+  width: 80vw;
+  background-color: red;
+}
+
 #stage #areaVideo .video {
   position: absolute;
   width: 846px;
   height: 476px;
-  top: 50%;
-  left: 50%;
-  margin: -238px 0 0 -423px;
+}
+
+#areaVideo #contVideo {
+  display: flex;
+}
+
+#areaVideo #contVideo .video-left-content {
+  width: 80px;
+  background-color: white;
+  border-radius: 25px 0px 0px 25px;
+  box-shadow: 1px 0 6px 0 #9e9e9e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#areaVideo #contVideo .video-left-content .button-sair {
+  margin-top: 15px;
+  height: 30px;
+  width: 30px;
+  background: url(img/btn-sair.png) no-repeat;
+  cursor: pointer;
+  transform: scale(0.7);
+}
+
+#areaVideo #contVideo .video-left-content .text {
+  font-family: "sourceSansBold";
+  color: #4a462a;
+  cursor: pointer;
+}
+
+#areaVideo #contVideo .video-right-content .button-luz {
+  margin-top: 10px;
+  height: 42px;
+  width: 40px;
+  background: url(img/luz.png) no-repeat;
+  transform: scale(0.65);
+  cursor: pointer;
+}
+
+#areaVideo #contVideo .video-right-content .text {
+  font-family: "sourceSansBold";
+  color: #4a462a;
+  margin-top: -8px;
+  margin-left: -8px;
+  cursor: pointer;
+}
+
+#areaVideo #contVideo .video-right-content {
+  width: 80px;
+  background-color: white;
+  border-radius: 0px 25px 25px 0px;
+  box-shadow: 1px 0 6px 0 #9e9e9e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #areaVideo #moldura {
@@ -1509,4 +1584,97 @@ button {
   left: 0;
   background: #fff url(img/mensagem-rotate.png) no-repeat center center;
   z-index: 300;
+}
+
+.popUpVideo {
+  z-index: 101;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -55px;
+  background-color: #00000059;
+}
+
+.popUpVideo section {
+  width: 600px;
+  height: 300px;
+  background-color: white;
+  box-shadow: 1px 0 6px 0 #9e9e9e;
+  border-radius: 2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  position: relative;
+}
+
+.popUpVideo section button {
+  font-family: "sourceSansBold";
+  width: 75%;
+  font-size: 1.2vw;
+  color: #fff;
+  background-color: #0087c2;
+  border: none;
+  border-radius: 16px;
+  padding: 0.75em 1em;
+}
+
+.popUpVideo section .fechar_popup {
+  top: 5px;
+  right: 6px;
+  position: absolute;
+  height: 55px;
+  width: 55px;
+  background: url(img/sprite.png) no-repeat;
+  background-position: -135px -1px;
+  filter: brightness(60%);
+  transform: scale(0.8);
+  cursor: pointer;
+}
+
+.popUpVideo section .explicacao {
+  font-family: "sourceSansBold";
+  color: #4a462a;
+  font-size: 22px;
+}
+
+.popUpVideo section .buttton-items {
+  display: flex;
+  width: 330px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popUpVideo section .buttton-items button {
+  cursor: pointer;
+  font-size: 24px;
+  font-family: "sourceSansBold";
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #928c5d;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+}
+
+.popUpVideo section .buttons-section {
+  margin-top: 30px;
+  display: flex;
+  gap: 6%;
+}
+
+.popUpVideo section .buttons-section button {
+  width: 260px;
+  font-family: "sourceSansBold";
+  font-size: 18px;
+  color: #fff;
+  background-color: #0087c2;
+  border: none;
+  border-radius: 14px;
 }

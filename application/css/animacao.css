@@ -1,19 +1,19 @@
-#interatividade{
-	background: #151515;
+#interatividade {
+  background: white;
 }
-#interatividade .main{
-	position: absolute;
-	left: 0px;
-	right: 0px;
-	top: 0px;
-	bottom: 0px;
-}
-#interatividade .main .content{
+#interatividade .main {
   position: absolute;
   left: 0px;
-	right: 0px;
-	top: 50%;
-	height: 500px;
-	margin-top: -250px;
-	overflow: hidden;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+}
+#interatividade .main .content {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  top: 50%;
+  height: 500px;
+  margin-top: -250px;
+  overflow: hidden;
 }

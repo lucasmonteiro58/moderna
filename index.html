@@ -1,51 +1,65 @@
 ﻿<!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-	<meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
-	<title>&nbsp;</title>
-	<link rel="stylesheet" href="system/fonts/fonts.css" />
-	<link rel="stylesheet" href="system/css/interface.css" />
-	<link rel="stylesheet" href="system/css/interface_autocontraste.css" />
-	<link rel="stylesheet" href="system/css/mediaelementplayer/mediaelementplayer.min.css" />
-	<link rel="stylesheet" href="system/css/mediaelementplayer/mediaelementplayer_autocontraste.min.css" />
-	<link rel="stylesheet" href="system/css/interface_mobile.css" />
-	<link rel="stylesheet" href="application/css/animacao.css" />
-	<link rel="stylesheet" href="application/css/animacao_mobile.css" />
-	<script src="system/js/lib/jquery/jquery.min.js"></script>
-	<script src="system/js/lib/html5shiv.js"></script>
-	<script src="system/js/lib/mediaelement.min.js"></script>
-	<script src="system/js/lib/jquery/jquery.mobile.custom.min.js"></script>
-	<script src="system/js/lib/jquery/jquery.ui.min.js"></script>
-	<script src="system/js/lib/jquery/jquery.tinyscrollbar.min.js"></script>
-	<script src="system/js/lib/jquery/jquery.ui.touch_punch.js"></script>
-	<script src="system/js/lib/jquery/jquery.knob.js"></script>
-	<script src="system/js/lib/greensock/TweenMax.min.js"></script>
-	<script src="system/js/lib/greensock/TimelineMax.min.js"></script>
-	<script src="system/js/lib/greensock/plugins/CSSPlugin.min.js"></script>
-	<script src="system/js/lib/greensock/utils/Draggable.min.js"></script>
-	<script src="system/js/lib/greensock/easing/EasePack.min.js"></script>
-	<script src="system/js/lib/preloader/animations/jquery.html5loader.circular.js"></script>
-	<script src="system/js/lib/preloader/jquery.html5loader.js"></script>
-	<script src="system/js/lib/motio.min.js"></script>
-	<script src="system/js/classes/functions.js"></script>
-	<script src="system/js/classes/keynav_controller.js"></script>
-	<script src="system/js/classes/interface_controller.js"></script>
-	<script src="system/js/classes/tempo_controller.js"></script>
-	<script src="system/js/classes/textos.js"></script>
-	<script src="system/js/classes/zoom.js"></script>
-	<script src="system/js/classes/main.js"></script>
-	<script src="application/js/textos.js"></script>
-	<script src="application/js/config.js"></script>
-	<script src="application/js/animacao.js"></script>
-</head>
-<body>
-<div class='body noSelect'>
-	<div id="stage">
-		<div class='abs' id='oedDescription' role='section'>Comandos de teclado: Alt + O, abre o menu; Alt + C, fecha o menu; Alt + A, abre/fecha o menu e o painel Acessibilidade; Alt + X, fecha os popups; Tab, navega para o próximo item; Shift + Tab, navega para o item anterior.</div>
-		<!--
+  <head>
+    <meta
+      name="viewport"
+      content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <title>&nbsp;</title>
+    <link rel="stylesheet" href="system/fonts/fonts.css" />
+    <link rel="stylesheet" href="system/css/interface.css" />
+    <link rel="stylesheet" href="system/css/interface_autocontraste.css" />
+    <link
+      rel="stylesheet"
+      href="system/css/mediaelementplayer/mediaelementplayer.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="system/css/mediaelementplayer/mediaelementplayer_autocontraste.min.css"
+    />
+    <link rel="stylesheet" href="system/css/interface_mobile.css" />
+    <link rel="stylesheet" href="application/css/animacao.css" />
+    <link rel="stylesheet" href="application/css/animacao_mobile.css" />
+    <script src="system/js/lib/jquery/jquery.min.js"></script>
+    <script src="system/js/lib/html5shiv.js"></script>
+    <script src="system/js/lib/mediaelement.min.js"></script>
+    <script src="system/js/lib/jquery/jquery.mobile.custom.min.js"></script>
+    <script src="system/js/lib/jquery/jquery.ui.min.js"></script>
+    <script src="system/js/lib/jquery/jquery.tinyscrollbar.min.js"></script>
+    <script src="system/js/lib/jquery/jquery.ui.touch_punch.js"></script>
+    <script src="system/js/lib/jquery/jquery.knob.js"></script>
+    <script src="system/js/lib/greensock/TweenMax.min.js"></script>
+    <script src="system/js/lib/greensock/TimelineMax.min.js"></script>
+    <script src="system/js/lib/greensock/plugins/CSSPlugin.min.js"></script>
+    <script src="system/js/lib/greensock/utils/Draggable.min.js"></script>
+    <script src="system/js/lib/greensock/easing/EasePack.min.js"></script>
+    <script src="system/js/lib/preloader/animations/jquery.html5loader.circular.js"></script>
+    <script src="system/js/lib/preloader/jquery.html5loader.js"></script>
+    <script src="system/js/lib/motio.min.js"></script>
+    <script src="system/js/classes/functions.js"></script>
+    <script src="system/js/classes/keynav_controller.js"></script>
+    <script src="system/js/classes/interface_controller.js"></script>
+    <script src="system/js/classes/tempo_controller.js"></script>
+    <script src="system/js/classes/textos.js"></script>
+    <script src="system/js/classes/zoom.js"></script>
+    <script src="system/js/classes/main.js"></script>
+    <script src="application/js/textos.js"></script>
+    <script src="application/js/config.js"></script>
+    <script src="application/js/animacao.js"></script>
+  </head>
+  <body>
+    <div class="body noSelect">
+      <div id="stage">
+        <div class="abs" id="oedDescription" role="section">
+          Comandos de teclado: Alt + O, abre o menu; Alt + C, fecha o menu; Alt
+          + A, abre/fecha o menu e o painel Acessibilidade; Alt + X, fecha os
+          popups; Tab, navega para o próximo item; Shift + Tab, navega para o
+          item anterior.
+        </div>
+        <!--
 			NÃO ALTERAR - INÍCIO
 			-->
-		<!-- <div class='abs' id='abertura'>
+        <!-- <div class='abs' id='abertura'>
 			<span class="decoration_0"></span>
 			<span class="decoration_1"></span>
 			<span class="decoration_2"></span>
@@ -57,167 +71,516 @@
 			<script>Main.initPreloader();</script>
 		</div>
 		<button class='tocar'>INICIAR</button> -->
-		<button id='btnOpcoes' class='displayNone' aria-controls='interface' aria-expanded='false'>Menu</button>
-		<div id='interface' class='abs' role='region' data-status='off' aria-expanded='false' aria-activedescendant="btnOpcoes" aria-labelledby='btnOpcoes' tabindex='-1'>
-			<ul class='lateral'>
-				<li class='btn '> <button id='btnFases' > <i class='icon icon-fase'></i> <b>Fases</b> </button> </li>
-				<li class='btn '> <button id='btnMenu' > <i class='icon icon-menu'></i> <b>Início</b> </button> </li>
-				<li class='btn '> <button id='btnRoteiro' > <i class='icon icon-roteiro'></i> <b>Roteiro de estudos</b> </button> </li>
-				<li class='btn '> <button id='btnReiniciar' > <i class='icon icon-reiniciar'></i> <b>Reiniciar</b> </button> </li>
-				<li class='btn '> <button id='btnSom'  data-status='on' aria-selected='false'> <i class='icon icon-som'></i> <b>Som Ativado</b> </button> </li>
-				<li class='btn '>
-					<button id='btnAcessibilidade' aria-controls='acessibilidade' aria-expanded='false'> <i class='icon icon-acessibilidade'></i> <b>Acessibilidade</b> </button>
-					<div id='acessibilidade' class='boxTexto' data-status='closed' role='group' aria-expanded='false' aria-labelledby="btnAcessibilidade">
-						<div id='slideAcessivel'>
-							<a href='javascript:;' title='FECHAR' class='fechar visual2' aria-hidden='true' >&lt;</a>
-							<div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
-							<div class="viewport" tabindex='0'> <div class="overview">
-							<div class='content'>
-								<div class='bloco blAlt'>
-									<h4>Alto contraste</h4>
-									<label role='button' id='btnAutoContraste' tabindex='0' aria-label='Alto-contraste desativado' aria-selected='false'> <span class='checkbox' role='checkbox' aria-checked='false'><i></i></span> <span class='text'>Desativado</span></label>
-								</div>
-								<div class='bloco' data-controller='no_close_caption'>
-									<h4 class='has_close_caption ' >Legenda</h4>
-									<label class='has_close_caption' role='button' id='btnClosedCaption' tabindex='0' aria-label='Legenda desativado' aria-selected='false'> <span class='checkbox' role='checkbox' aria-checked='false'><i></i></span> <span class='text'>Desativada</span></label>
-									<label class='has_close_caption cc_control disabled'>Tamanho da fonte</label>
-									<label class='has_close_caption cc_control cc_font_control disabled tabindex' id='btnCCFont1' tabindex='-1' role='button' aria-label='Tamanho da fonte pequena' aria-selected='false' data-value='1' >
-										<span class='radio' role='radio' aria-checked='false'></span> Pequeno</label>
-									<label class='has_close_caption cc_control cc_font_control disabled tabindex' id='btnCCFont2' tabindex='-1' role='button' aria-label='Tamanho da fonte normal' aria-selected='true' data-value='2'>
-										<span class='radio' role='radio' aria-checked='true'></span> Normal</label>
-									<label class='has_close_caption cc_control cc_font_control disabled tabindex' id='btnCCFont3' tabindex='-1' role='button' aria-label='Tamanho da fonte grande' aria-selected='false' data-value='3'>
-										<span class='radio' role='radio' aria-checked='false'></span> Grande</label>
-								</div>
-								<div class='bloco' data-controller='no_speed'>
-									<h4>Velocidade do vídeo</h4>
-									<label class='cc_speed_control' id='btnCCSpeed1' tabindex='0' role='button' aria-label='velocidade dos vídeos lenta' aria-selected='false' data-value='0.5'>
-										<span class='radio' role='radio' aria-checked='false'></span> 0.5 x – lenta</label>
-									<label class='cc_speed_control' id='btnCCSpeed2' tabindex='0' role='button' aria-label='velocidade dos vídeos normal' aria-selected='true' data-value='1'>
-										<span class='radio' role='radio' aria-checked='true'></span> 1.0 x – normal</label>
-									<label class='cc_speed_control' id='btnCCSpeed3' tabindex='0' role='button' aria-label='velocidade dos vídeos rápida' aria-selected='false' data-value='2'>
-										<span class='radio' role='radio' aria-checked='false'></span> 2.0 x – rápida</label>
-								</div>
-							</div>
-							<div class='content' id='interComando'>
-								<div class='bloco'>
-									<h4>Comandos de teclado</h4>
-									<label><b>"Alt" + O</b> <span>Abre o menu</span></label>
-									<label><b>"Alt" + C</b> <span>Fecha o menu </span></label>
-									<label><b>"Alt" + A</b> <span>Abre/fecha o tópico “Acessibilidade” do menu</span></label>
-									<label><b>"Alt" + X</b> <span>Fecha os <i>pop-ups</i> </span></label>
-									<label><b>"Tab"</b> <span>Navega para o próximo elemento focalizável</span></label>
-									<label><b>"Shift" + "Tab"</b> <span>Navega para o elemento focalizável anterior </span></label>
-								</div>
-							</div>
-							</div> </div>
-						</div>
-					</div>
-				</li>
-				<li class='btn '>
-					<button id='btnAjuda' aria-controls='ajuda' aria-expanded='false'> <i class='icon icon-ajuda'></i> <b>Ajuda</b> </button>
-					<div id='ajuda' class='boxTexto' data-status='closed' role='group' aria-expanded='false' aria-labelledby="btnAjuda">
-						<div class='content'>
-							<a href='javascript:;' title='FECHAR' class='fechar visual2' aria-hidden='true' >&lt;</a>
-							<div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
-							<div class="viewport" tabindex='0'> <div class="overview"> </div> </div>
-						</div>
-					</div>
-				</li>
-				
-				<li class='btn '>
-					<button id='btnCreditos' aria-controls='informacoes' aria-expanded='false'> <i class='icon icon-creditos'></i> <b>Créditos</b> </button>
-					<div id='informacoes' class='boxTexto' data-status='closed' role='group' aria-expanded='false' aria-labelledby="btnCreditos">
-						<div class='content'>
-							<span></span>
-							<div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
-							<div class="viewport" tabindex='0'> <div class="overview"> </div> </div>
-							<a href='javascript:;' title='FECHAR' class='fechar visual2' aria-hidden='true' >&lt;</a>
-						</div>
-					</div>
-				</li>
-			
-			</ul>
-			<div class='filtro displayNone'></div>
-			<div class='superior'> <span class="logo_supeior"></span> </div>
-		</div>
-		<!-- <div id='galeria' tabindex='-1' class='displayNone'> </div> -->
-		<div id="questionSection" class='question displayNone'>
-			<span class="decoration_0"></span>
-			<span class="decoration_1"></span>
-			<span class="decoration_2"></span>
-			<span class="decoration_3"></span>
-			<div id="mc_logo_intro"> </div>
-			<section> 				
-				<div class="title"></div>
-				<div class="subtitle"></div> 
-				<div class="question_content"></div>
-				<div class="question_font"></div>
-				<div class="question_acesso"></div>
-				<div class="image_section">
-					<img class="img_question" src="" alt="">
-					<span>
-						<span class="image_font"></span>
-						<span class="image_acesso"></span>
-					</span>				
-				</div>	
-				<div class="question_enunciado"></div>
-				<div class="questions_items question_item_a"></div>
-				<div class="questions_items question_item_b"></div>
-				<div class="questions_items question_item_c"></div>
-				<div class="questions_items question_item_d"></div>
-				<div class="question_fotter">
-					<div class="qual_item">
-						<div class="text">Qual item você acha que está correto?</div>
-						<div class="items">
-							<div class="item item-a">A</div>
-							<div class="item item-b">B</div>
-							<div class="item item-c">C</div>
-							<div class="item item-d">D</div>
-						</div>
-					</div>
-					<div class="buttom">
-						<button id="btnConferir">Conferir</button>
-					</div>
-				</div>
-			</section>
-		</div>
-		<div id="videoSection" class='video_section displayNone'>
-			<span class="decoration_0"></span>
-			<span class="decoration_1"></span>
-			<span class="decoration_2"></span>
-			<span class="decoration_3"></span>
-			<div id="mc_logo_intro"> </div>
-		</div>
-		<div class='feedback displayNone'>
-			<span class="decoration_0"></span>
-			<span class="decoration_1"></span>
-			<span class="decoration_2"></span>
-			<span class="decoration_3"></span>
-			<div id="mc_logo_intro"> </div>
-			<section> <article> <blockquote></blockquote> <footer></footer> </article> </section>
-		</div>
-		<!--
+        <button
+          id="btnOpcoes"
+          class="displayNone"
+          aria-controls="interface"
+          aria-expanded="false"
+        >
+          Menu
+        </button>
+        <div
+          id="interface"
+          class="abs"
+          role="region"
+          data-status="off"
+          aria-expanded="false"
+          aria-activedescendant="btnOpcoes"
+          aria-labelledby="btnOpcoes"
+          tabindex="-1"
+        >
+          <ul class="lateral">
+            <li class="btn">
+              <button id="btnFases">
+                <i class="icon icon-fase"></i> <b>Fases</b>
+              </button>
+            </li>
+            <li class="btn">
+              <button id="btnMenu">
+                <i class="icon icon-menu"></i> <b>Início</b>
+              </button>
+            </li>
+            <li class="btn">
+              <button id="btnRoteiro">
+                <i class="icon icon-roteiro"></i> <b>Roteiro de estudos</b>
+              </button>
+            </li>
+            <li class="btn">
+              <button id="btnReiniciar">
+                <i class="icon icon-reiniciar"></i> <b>Reiniciar</b>
+              </button>
+            </li>
+            <li class="btn">
+              <button id="btnSom" data-status="on" aria-selected="false">
+                <i class="icon icon-som"></i> <b>Som Ativado</b>
+              </button>
+            </li>
+            <li class="btn">
+              <button
+                id="btnAcessibilidade"
+                aria-controls="acessibilidade"
+                aria-expanded="false"
+              >
+                <i class="icon icon-acessibilidade"></i> <b>Acessibilidade</b>
+              </button>
+              <div
+                id="acessibilidade"
+                class="boxTexto"
+                data-status="closed"
+                role="group"
+                aria-expanded="false"
+                aria-labelledby="btnAcessibilidade"
+              >
+                <div id="slideAcessivel">
+                  <a
+                    href="javascript:;"
+                    title="FECHAR"
+                    class="fechar visual2"
+                    aria-hidden="true"
+                    >&lt;</a
+                  >
+                  <div class="scrollbar">
+                    <div class="track">
+                      <div class="thumb"><div class="end"></div></div>
+                    </div>
+                  </div>
+                  <div class="viewport" tabindex="0">
+                    <div class="overview">
+                      <div class="content">
+                        <div class="bloco blAlt">
+                          <h4>Alto contraste</h4>
+                          <label
+                            role="button"
+                            id="btnAutoContraste"
+                            tabindex="0"
+                            aria-label="Alto-contraste desativado"
+                            aria-selected="false"
+                          >
+                            <span
+                              class="checkbox"
+                              role="checkbox"
+                              aria-checked="false"
+                              ><i></i
+                            ></span>
+                            <span class="text">Desativado</span></label
+                          >
+                        </div>
+                        <div class="bloco" data-controller="no_close_caption">
+                          <h4 class="has_close_caption">Legenda</h4>
+                          <label
+                            class="has_close_caption"
+                            role="button"
+                            id="btnClosedCaption"
+                            tabindex="0"
+                            aria-label="Legenda desativado"
+                            aria-selected="false"
+                          >
+                            <span
+                              class="checkbox"
+                              role="checkbox"
+                              aria-checked="false"
+                              ><i></i
+                            ></span>
+                            <span class="text">Desativada</span></label
+                          >
+                          <label class="has_close_caption cc_control disabled"
+                            >Tamanho da fonte</label
+                          >
+                          <label
+                            class="has_close_caption cc_control cc_font_control disabled tabindex"
+                            id="btnCCFont1"
+                            tabindex="-1"
+                            role="button"
+                            aria-label="Tamanho da fonte pequena"
+                            aria-selected="false"
+                            data-value="1"
+                          >
+                            <span
+                              class="radio"
+                              role="radio"
+                              aria-checked="false"
+                            ></span>
+                            Pequeno</label
+                          >
+                          <label
+                            class="has_close_caption cc_control cc_font_control disabled tabindex"
+                            id="btnCCFont2"
+                            tabindex="-1"
+                            role="button"
+                            aria-label="Tamanho da fonte normal"
+                            aria-selected="true"
+                            data-value="2"
+                          >
+                            <span
+                              class="radio"
+                              role="radio"
+                              aria-checked="true"
+                            ></span>
+                            Normal</label
+                          >
+                          <label
+                            class="has_close_caption cc_control cc_font_control disabled tabindex"
+                            id="btnCCFont3"
+                            tabindex="-1"
+                            role="button"
+                            aria-label="Tamanho da fonte grande"
+                            aria-selected="false"
+                            data-value="3"
+                          >
+                            <span
+                              class="radio"
+                              role="radio"
+                              aria-checked="false"
+                            ></span>
+                            Grande</label
+                          >
+                        </div>
+                        <div class="bloco" data-controller="no_speed">
+                          <h4>Velocidade do vídeo</h4>
+                          <label
+                            class="cc_speed_control"
+                            id="btnCCSpeed1"
+                            tabindex="0"
+                            role="button"
+                            aria-label="velocidade dos vídeos lenta"
+                            aria-selected="false"
+                            data-value="0.5"
+                          >
+                            <span
+                              class="radio"
+                              role="radio"
+                              aria-checked="false"
+                            ></span>
+                            0.5 x – lenta</label
+                          >
+                          <label
+                            class="cc_speed_control"
+                            id="btnCCSpeed2"
+                            tabindex="0"
+                            role="button"
+                            aria-label="velocidade dos vídeos normal"
+                            aria-selected="true"
+                            data-value="1"
+                          >
+                            <span
+                              class="radio"
+                              role="radio"
+                              aria-checked="true"
+                            ></span>
+                            1.0 x – normal</label
+                          >
+                          <label
+                            class="cc_speed_control"
+                            id="btnCCSpeed3"
+                            tabindex="0"
+                            role="button"
+                            aria-label="velocidade dos vídeos rápida"
+                            aria-selected="false"
+                            data-value="2"
+                          >
+                            <span
+                              class="radio"
+                              role="radio"
+                              aria-checked="false"
+                            ></span>
+                            2.0 x – rápida</label
+                          >
+                        </div>
+                      </div>
+                      <div class="content" id="interComando">
+                        <div class="bloco">
+                          <h4>Comandos de teclado</h4>
+                          <label
+                            ><b>"Alt" + O</b> <span>Abre o menu</span></label
+                          >
+                          <label
+                            ><b>"Alt" + C</b> <span>Fecha o menu </span></label
+                          >
+                          <label
+                            ><b>"Alt" + A</b>
+                            <span
+                              >Abre/fecha o tópico “Acessibilidade” do
+                              menu</span
+                            ></label
+                          >
+                          <label
+                            ><b>"Alt" + X</b>
+                            <span>Fecha os <i>pop-ups</i> </span></label
+                          >
+                          <label
+                            ><b>"Tab"</b>
+                            <span
+                              >Navega para o próximo elemento focalizável</span
+                            ></label
+                          >
+                          <label
+                            ><b>"Shift" + "Tab"</b>
+                            <span
+                              >Navega para o elemento focalizável anterior
+                            </span></label
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="btn">
+              <button id="btnAjuda" aria-controls="ajuda" aria-expanded="false">
+                <i class="icon icon-ajuda"></i> <b>Ajuda</b>
+              </button>
+              <div
+                id="ajuda"
+                class="boxTexto"
+                data-status="closed"
+                role="group"
+                aria-expanded="false"
+                aria-labelledby="btnAjuda"
+              >
+                <div class="content">
+                  <a
+                    href="javascript:;"
+                    title="FECHAR"
+                    class="fechar visual2"
+                    aria-hidden="true"
+                    >&lt;</a
+                  >
+                  <div class="scrollbar">
+                    <div class="track">
+                      <div class="thumb"><div class="end"></div></div>
+                    </div>
+                  </div>
+                  <div class="viewport" tabindex="0">
+                    <div class="overview"></div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="btn">
+              <button
+                id="btnCreditos"
+                aria-controls="informacoes"
+                aria-expanded="false"
+              >
+                <i class="icon icon-creditos"></i> <b>Créditos</b>
+              </button>
+              <div
+                id="informacoes"
+                class="boxTexto"
+                data-status="closed"
+                role="group"
+                aria-expanded="false"
+                aria-labelledby="btnCreditos"
+              >
+                <div class="content">
+                  <span></span>
+                  <div class="scrollbar">
+                    <div class="track">
+                      <div class="thumb"><div class="end"></div></div>
+                    </div>
+                  </div>
+                  <div class="viewport" tabindex="0">
+                    <div class="overview"></div>
+                  </div>
+                  <a
+                    href="javascript:;"
+                    title="FECHAR"
+                    class="fechar visual2"
+                    aria-hidden="true"
+                    >&lt;</a
+                  >
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="filtro displayNone"></div>
+          <div class="superior"><span class="logo_supeior"></span></div>
+        </div>
+        <!-- <div id='galeria' tabindex='-1' class='displayNone'> </div> -->
+        <div id="questionSection" class="question displayNone">
+          <span class="decoration_0"></span>
+          <span class="decoration_1"></span>
+          <span class="decoration_2"></span>
+          <span class="decoration_3"></span>
+          <div id="mc_logo_intro"></div>
+          <section id="questionSection">
+            <div class="title"></div>
+            <div class="subtitle"></div>
+            <div class="question_content"></div>
+            <div class="question_font"></div>
+            <div class="question_acesso"></div>
+            <div class="image_section">
+              <img class="img_question" src="" alt="" />
+              <span>
+                <span class="image_font"></span>
+                <span class="image_acesso"></span>
+              </span>
+            </div>
+            <div class="question_enunciado"></div>
+            <div class="questions_items question_item_a"></div>
+            <div class="questions_items question_item_b"></div>
+            <div class="questions_items question_item_c"></div>
+            <div class="questions_items question_item_d"></div>
+            <div class="question_fotter">
+              <div class="qual_item">
+                <div class="text">Qual item você acha que está correto?</div>
+                <div class="items">
+                  <div class="item item-a">A</div>
+                  <div class="item item-b">B</div>
+                  <div class="item item-c">C</div>
+                  <div class="item item-d">D</div>
+                </div>
+              </div>
+              <div class="buttom">
+                <button id="btnConferir">Conferir</button>
+              </div>
+            </div>
+          </section>
+        </div>
+        <div class="feedback displayNone">
+          <span class="decoration_0"></span>
+          <span class="decoration_1"></span>
+          <span class="decoration_2"></span>
+          <span class="decoration_3"></span>
+          <div id="mc_logo_intro"></div>
+          <section>
+            <article>
+              <blockquote></blockquote>
+              <footer></footer>
+            </article>
+          </section>
+        </div>
+        <!--
 			NÃO ALTERAR - FIM
 			-->
-		<div id='interatividade' class='abs displayNone' role='region' tabindex='-1'>
-			<audio id="audio" class='abs displayNone volumeController'></audio>
-			<section id='areaVideo' class='displayNone tela' >
-				<img id='moldura' src="">
-				<div id='contVideo'>
-					<video id="video" data-idvideo="#video"></video>
-					<img id='posterVideo' class='abs' src='' width='846' height='476'/>
-					<!--div class='video' role='button' aria-label='Reiniciar' tabindex='0'></div-->
-				</div>
-				<button title='FECHAR' class='fechar tabindex'>fechar</button>
-			</section>
-		</div>
-	</div>
-</div>
-<div class='msgRotate'></div>
-<span class="decoration_0"></span>
-<span class="decoration_1"></span>
-<span class="decoration_2"></span>
-<span class="decoration_3"></span>
-<div id="mc_logo_intro"> </div>
-</body>
+        <div id="interatividade" class="abs" role="region" tabindex="-1">
+          <span class="decoration_0"></span>
+          <span class="decoration_1"></span>
+          <span class="decoration_2"></span>
+          <span class="decoration_3"></span>
+          <div id="mc_logo_intro"></div>
+          <audio id="audio" class="abs displayNone volumeController"></audio>
+          <section id="areaVideo" class="displayNone tela">
+            <img id="moldura" src="" />
+            <div id="contVideo">
+              <div class="video-left-content">
+								<div class="button-sair"></div>
+								<div class="text">SAIR</div>
+							</div>
+              <video id="video" data-idvideo="#video"></video>
+              <div class="video-right-content">
+								<div class="button-luz"></div>
+								<div class="text">LUZ</div>
+							</div>
+              <!-- <img id='posterVideo' class='abs' src='' width='846' height='476'/> -->
+              <!--div class='video' role='button' aria-label='Reiniciar' tabindex='0'></div-->
+            </div>
+            <!-- <button title='FECHAR' class='fechar tabindex'>fechar</button> -->
+          </section>
+        </div>
+        <div id="popUpVideo1" class="displayNone">
+          <div class="popUpVideo">
+            <section>
+              <div class="fechar_popup"></div>
+              <button
+                class="btn1"
+                onclick="InterfaceController.openVideoExplicacaoTexto()"
+              >
+                Ver a explicação do texto e imagem
+              </button>
+              <button
+                class="btn2"
+                onclick="InterfaceController.openVideoEnunciado()"
+              >
+                Pular para o enunciado da questão
+              </button>
+            </section>
+          </div>
+        </div>
+        <div id="popUpVideo2" class="displayNone">
+          <div class="popUpVideo">
+            <section>
+              <div class="fechar_popup"></div>
+              <button
+                class="btn1"
+                onclick="InterfaceController.openVideoEnunciado()"
+              >
+                Ver a explicação do enunciado
+              </button>
+              <button
+                class="btn2"
+                onclick="InterfaceController.openVideoExplicacaoTexto()"
+              >
+                Voltar para a explicação do texto
+              </button>
+            </section>
+          </div>
+        </div>
+        <div id="popUpVideo3" class="displayNone">
+          <div class="popUpVideo">
+            <section>
+              <div class="fechar_popup"></div>
+              <div class="explicacao">Explicação itens</div>
+              <div class="buttton-items">
+                <button
+                  class="item_A"
+                  onclick="InterfaceController.openVideoItemA()"
+                >
+                  A
+                </button>
+                <button
+                  class="item_B"
+                  onclick="InterfaceController.openVideoItemB()"
+                >
+                  B
+                </button>
+                <button
+                  class="item_C"
+                  onclick="InterfaceController.openVideoItemC()"
+                >
+                  C
+                </button>
+                <button
+                  class="item_D"
+                  onclick="InterfaceController.openVideoItemD()"
+                >
+                  D
+                </button>
+              </div>
+              <div class="buttons-section">
+                <button
+                  class="btn1"
+                  onclick="InterfaceController.openVideoIntroducao()"
+                >
+                  Início explicação
+                </button>
+                <button
+                  class="btn2"
+                  onclick="InterfaceController.openVideoEncerramento()"
+                >
+                  Encerramento
+                </button>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div id="popUpVideo4" class="displayNone">
+          <div class="popUpVideo">
+            <section>
+              <div class="fechar_popup"></div>
+              <button
+                class="btn1"
+                onclick="InterfaceController.openVideoIntroducao()"
+              >
+                Rever a explicação completa
+              </button>
+              <button class="btn2">Sair da questão</button>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
