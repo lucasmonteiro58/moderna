@@ -48,12 +48,24 @@ var Main = {
 			}
 		});
 
-				// BOTÃO CONFERIR
+		// BOTÃO CONFERIR
 
-				$('#btnConferir').unbind('keydown tap').bind('keydown tap', function(e)
-				{
-					InterfaceController.openVideoIntroducao();					
-				} );
+		$('#btnConferir').unbind('keydown tap').bind('keydown tap', function(e)
+		{
+			if (
+        /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+          navigator.userAgent
+        )
+      ) {
+        if (window.innerHeight > window.innerWidth) {
+          InterfaceController.openPopUpRotacao();
+        } else {
+					InterfaceController.openVideoIntroducao();
+        }
+      } else {
+				InterfaceController.openVideoIntroducao();
+      }						
+		} );
 
 
 		$('.titulo').html(Main.titulo);

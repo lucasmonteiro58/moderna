@@ -440,3 +440,38 @@
 #stage[data-autocontraste="true"] div .popUpVideo section .explicacao {
   color: rgb(255, 255, 255);
 }
+
+#stage[data-autocontraste="true"] div .popUpCompartilhar section {
+  background-color: #000;
+}
+
+#stage[data-autocontraste="true"] div .popUpCompartilhar section .title-compartilhe{
+  color: white;
+}
+
+#stage[data-autocontraste="true"] div .popUpCompartilhar section .link{
+  color: black;
+  background-color: white;
+}
+
+#stage[data-autocontraste="true"] div .popUpCompartilhar section button{
+ background-color: yellow;
+ color: black;
+}
+
+#stage[data-autocontraste="true"] div .popUpRotacao section {
+  background-color: #000;
+}
+
+#stage[data-autocontraste="true"] div .popUpRotacao section .title-compartilhe{
+  color: white;
+}
+
+#stage[data-autocontraste="true"] div .popUpRotacao section button{
+  background-color: yellow;
+  color: black;
+ }
+
+ #stage[data-autocontraste="true"] div .popUpRotacao section .image_rotation_popup{
+  filter: invert(1);
+ }

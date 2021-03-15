@@ -637,6 +637,16 @@
 	closePopUpCompartilhar: function() {
 		$('#popUpCompartilhar').hide();
 	},
+	openPopUpRotacao: function() {
+		$('#popUpRotacao').fadeIn(100);
+	},
+	closePopUpRotacao: function() {
+		$('#popUpRotacao').hide();
+	},
+	goToVideo: function() {
+		$('#popUpRotacao').hide();
+		InterfaceController.openVideoIntroducao();
+	},
 	ampliaGaleria: function(e){
 		if (e.keyCode === 13 || e.type === 'tap') {
 			var that = InterfaceController;

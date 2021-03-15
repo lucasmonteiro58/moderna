@@ -1623,6 +1623,18 @@ button {
   background-color: #00000059;
 }
 
+.popUpRotacao {
+  z-index: 101;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -55px;
+  background-color: #00000059;
+}
+
 .popUpCompartilhar  {
   z-index: 200;
 }
@@ -1640,9 +1652,25 @@ button {
   position: relative;
 }
 
+
+
 .popUpCompartilhar section {
   width: 486px;
   height: 300px;
+  background-color: white;
+  box-shadow: 1px 0 6px 0 #9e9e9e;
+  border-radius: 2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  position: relative;
+}
+
+.popUpRotacao section {
+  width: 650px;
+  height: 370px;
   background-color: white;
   box-shadow: 1px 0 6px 0 #9e9e9e;
   border-radius: 2vw;
@@ -1689,6 +1717,46 @@ button {
   filter: brightness(60%);
   transform: scale(0.8);
   cursor: pointer;
+}
+
+.popUpRotacao section .fechar_popup {
+  top: 5px;
+  right: 6px;
+  position: absolute;
+  height: 55px;
+  width: 55px;
+  background: url(img/sprite.png) no-repeat;
+  background-position: -135px -1px;
+  filter: brightness(60%);
+  transform: scale(0.8);
+  cursor: pointer;
+}
+
+.popUpRotacao section .title-compartilhe {
+  font-family: sourceSansBold;
+  font-size: 23px;
+  width: 450px;
+  text-align: center;
+  color: #4a462a;
+  margin-bottom: 20px;
+}
+
+.popUpRotacao section .image_rotation_popup {
+  width: 72px;
+  height: 72px;
+  background: url(img/land.png) no-repeat;
+}
+
+
+.popUpRotacao section button{
+  margin-top: 10px;
+  font-family: sourceSansBold;
+  font-size: 20px;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #0087c2;
+  border: none;
+  border-radius: 14px;
 }
 
 .popUpCompartilhar section .title-compartilhe {

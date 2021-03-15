@@ -153,6 +153,16 @@
     width: 90vw;
   }
 
+  .popUpRotacao section {
+    width: 74vw;
+    height: 293px;
+  }
+
+  .popUpRotacao section .title-compartilhe {
+    font-size: 18px;
+    width: 90%;
+  }
+
   .popUpCompartilhar section .title-compartilhe {
     width: 80%;
     text-align: center;
@@ -371,7 +381,7 @@
     height: 55px;
   }
   #stage #interface .lateral {
-    top: 55px;
+    top: 54px;
   }
   #stage #interface .lateral .btn .icon {
     top: -5px;
@@ -697,4 +707,10 @@
     transform: scale(1);
     margin-top: 0px;
   }
+
+  .popUpRotacao section {
+    width: 90vw;
+    height: 345px;
+  }
 }
+
