@@ -456,10 +456,17 @@
     height: 100% !important;
   }
 
+  #areaVideo #contVideo .video-left-content {
+    display: none;
+  }
+
+  #areaVideo #contVideo .video-right-content {
+    display: none;
+  }
+
   #areaVideo #contVideo {
     background-color: transparent;
     transform: scale(0.7);
-    margin-top: 20px !important;
   }
 
   .popUpVideo section { 
