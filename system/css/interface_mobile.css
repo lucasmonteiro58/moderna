@@ -458,7 +458,19 @@
 
   #areaVideo #contVideo {
     background-color: transparent;
+    transform: scale(0.7);
+    margin-top: 20px !important;
   }
+
+  .popUpVideo section { 
+    width: 579px;
+    height: 246px;
+  }
+
+  .popUpVideo section button {
+    font-size: 20px;
+  }
+
   #areaVideo #contVideo,
   #stage #areaVideo .video {
     position: absolute;

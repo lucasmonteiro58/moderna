@@ -1316,9 +1316,9 @@ button {
 ::-webkit-scrollbar-track {
   background: #dbdbdb;
   border-radius: 20px;
-  margin-bottom: 42px;
-  margin-top: 80px;
-  display: none;
+  margin-bottom: 15px;
+  margin-top: 15px;
+ 
 }
 
 /* Handle */
