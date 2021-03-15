@@ -568,6 +568,7 @@
 		$('#questionSection section .question_font').html(Textos.question_font)
 		$('#questionSection section .question_acesso').html(Textos.question_acesso)
 		$('#questionSection section .image_section .img_question ').attr('src' , Textos.image_src)
+		$('#questionSection section .image_section .img_pop_up .img_question_popup').attr('src' , Textos.image_src)
 		$('#questionSection section .image_section span .image_font ').html(Textos.image_font)
 		$('#questionSection section .image_section span .image_acesso ').html(Textos.image_acesso)
 		$('#questionSection section .question_enunciado').html(Textos.question_enunciado)
@@ -640,8 +641,38 @@
 	openPopUpRotacao: function() {
 		$('#popUpRotacao').fadeIn(100);
 	},
+	openPopUpImagem: function() {
+		$('.img_pop_up').removeClass('img_pop_up_none')
+	},
+	closePopUpImagem: function() {
+		$('.img_pop_up').addClass('img_pop_up_none')
+	},
 	closePopUpRotacao: function() {
 		$('#popUpRotacao').hide();
+	},
+	copiarTexto: function() {
+		navigator.clipboard.writeText(" https://moderna-prototipo-v2.netlify.app/");
+	},
+	selecionarItem: function(item) {
+		if(item === 'a') {
+			InterfaceController.removeAllSelected()
+			$('#ItemA').addClass('selected')
+		} else if (item === 'b') {
+			InterfaceController.removeAllSelected()
+			$('#ItemB').addClass('selected')
+		} else if (item === 'c') {
+			InterfaceController.removeAllSelected()
+			$('#ItemC').addClass('selected')
+		} else if (item === 'd') {
+			InterfaceController.removeAllSelected()
+			$('#ItemD').addClass('selected')
+		}
+	},
+	removeAllSelected: function() {
+		$('#ItemA').removeClass('selected')
+		$('#ItemB').removeClass('selected')
+		$('#ItemC').removeClass('selected')
+		$('#ItemD').removeClass('selected')
 	},
 	goToVideo: function() {
 		$('#popUpRotacao').hide();

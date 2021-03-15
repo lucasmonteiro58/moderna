@@ -433,7 +433,10 @@
             <div class="question_font"></div>
             <div class="question_acesso"></div>
             <div class="image_section">
-              <img class="img_question" src="" alt="" />
+              <img onclick="InterfaceController.openPopUpImagem()" class="img_question" src="" alt="" />
+              <div onclick="InterfaceController.closePopUpImagem()"class="img_pop_up img_pop_up_none">
+                <img class="img_question_popup" src="" alt="" />
+              </div>
               <span>
                 <span class="image_font"></span>
                 <span class="image_acesso"></span>
@@ -448,10 +451,10 @@
               <div class="qual_item">
                 <div class="text">Qual item você acha que está correto?</div>
                 <div class="items">
-                  <div class="item item-a">A</div>
-                  <div class="item item-b">B</div>
-                  <div class="item item-c">C</div>
-                  <div class="item item-d">D</div>
+                  <div id="ItemA" onclick="InterfaceController.selecionarItem('a')" class="item item-a">A</div>
+                  <div id="ItemB" onclick="InterfaceController.selecionarItem('b')" class="item item-b">B</div>
+                  <div id="ItemC" onclick="InterfaceController.selecionarItem('c')" class="item item-c">C</div>
+                  <div id="ItemD" onclick="InterfaceController.selecionarItem('d')" class="item item-d">D</div>
                 </div>
               </div>
               <div class="buttom">
@@ -486,18 +489,36 @@
           <section id="areaVideo" class="displayNone tela">
             <img id="moldura" src="" />
             <div id="contVideo">
+              <div class="mobile-aviso">
+                <div class="image-aviso"></div>
+                <div class="texto-aviso"> Rotacione seu celular para
+                  ter melhor visualização</div>
+              </div>
               <div class="video-left-content">
 								<div id="btnSairVideo" class="button-sair"></div>
 								<div id="btnSairVideo2" class="text">SAIR</div>
 							</div>
-              <video id="video" data-idvideo="#video"></video>
+              <video id="video" data-idvideo="#video">                
+              </video>
               <div class="video-right-content">
 								<div id="btnAutoContrasteLuz" class="button-luz"></div>
 								<div id="btnAutoContrasteLuz2" class="text">LUZ</div>
 							</div>
+              <!-- <div class="content_mobile_video">
+                <div class="left-content">
+                  <div id="btnSairVideo" class="button-sair"></div>
+                  <div id="btnSairVideo2" class="text">SAIR</div>
+                </div>
+                <div class="right-content">
+                  <div id="btnAutoContrasteLuz" class="button-luz"></div>
+                  <div id="btnAutoContrasteLuz2" class="text">LUZ</div>
+                </div>
+              </div> -->
+              
               <!-- <img id='posterVideo' class='abs' src='' width='846' height='476'/> -->
               <!--div class='video' role='button' aria-label='Reiniciar' tabindex='0'></div-->
             </div>
+            
             <!-- <button title='FECHAR' class='fechar tabindex'>fechar</button> -->
           </section>
         </div>
@@ -609,7 +630,7 @@
              <div class="link"> <svg data-v-4d521fc4="" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link feather__content"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg> 
               https://moderna-prototipo-v2.netlify.app/
             </div>
-             <button> <svg data-v-4d521fc4="" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link feather__content"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+             <button onclick="InterfaceController.copiarTexto()"> <svg data-v-4d521fc4="" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link feather__content"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
               COPIAR</button>
             </section>
           </div>

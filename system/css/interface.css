@@ -1372,6 +1372,7 @@ button {
 
 .question section .image_section .img_question {
   width: 80%;
+  cursor: pointer;
 }
 
 .question section .image_section span {
@@ -1422,6 +1423,10 @@ button {
   border-radius: 50%;
   width: 60px;
   height: 60px;
+}
+
+.question section .question_fotter .qual_item .items .selected {
+  background-color: #575337; 
 }
 
 .question section .question_fotter .buttom {
@@ -1882,4 +1887,29 @@ button {
   transform: scale(0.7) !important;
   margin-right: 7px;
   margin-top: 4px;
+}
+
+.img_pop_up {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #0000006c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.img_pop_up_none {
+  display: none;
+}
+
+.img_pop_up .img_question_popup {
+  height: 80%;
+}
+
+.mobile-aviso {
+  display: none;
 }

@@ -339,6 +339,16 @@
 #stage[data-autocontraste="true"]
   #questionSection
   .question_fotter
+  .qual_item
+  .items
+  .selected {
+  background-color: rgb(138, 138, 138);
+  color: #000;
+}
+
+#stage[data-autocontraste="true"]
+  #questionSection
+  .question_fotter
   .buttom
   button {
   background-color: #fbff00;
@@ -373,6 +383,25 @@
   .video-left-content {
   background-color: rgb(0, 0, 0);
 }
+
+#stage[data-autocontraste="true"]
+  #interatividade
+  #areaVideo
+  #contVideo
+  .mobile-aviso
+  .texto-aviso {
+  color: white;
+}
+
+#stage[data-autocontraste="true"]
+  #interatividade
+  #areaVideo
+  #contVideo
+  .mobile-aviso
+  .image-aviso{
+  filter: invert(1) brightness(300%);
+}
+
 
 #stage[data-autocontraste="true"]
   #interatividade

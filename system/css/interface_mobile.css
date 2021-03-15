@@ -149,6 +149,11 @@
     height: 163px;
   }
 
+  .img_pop_up .img_question_popup {
+    height: auto;
+    width: 90vw;
+  }
+
   .popUpCompartilhar section {
     width: 90vw;
   }
@@ -222,6 +227,29 @@
 
   .question section .title {
     font-size: 20px;
+  }
+
+  .mobile-aviso {
+    position: absolute;
+    width: 200px;
+    right: 10px;
+    top: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .mobile-aviso .image-aviso{
+    background: url(img/land-black.png) no-repeat;
+    width: 31px;
+    height: 31px;
+    margin-bottom: 5px;
+  }
+
+  .mobile-aviso .texto-aviso{
+    text-align: right;
+    font-family: sourceSansBold;
+    color:#4a462a;
   }
 
   .question section .subtitle {
