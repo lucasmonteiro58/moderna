@@ -214,6 +214,49 @@
 			}
 		} );
 
+			// BOTÃO AUTO CONTRASTE
+			$('#btnAutoContrasteLuz').unbind('keydown tap').bind('keydown tap', function(e)
+			{
+				if (e.keyCode === 13 || e.type === 'tap') {
+					if( that.acessibilidade.autoContraste ){
+						that.acessibilidade.autoContraste = false;
+						$('#btnAutoContraste .text').html('Desativado');
+						$('#btnAutoContraste').attr('aria-label','Alto-contrate desativado').attr('aria-selected',false);
+						$('#stage #interface .superior').css('margin-left','0px');
+					}else{
+						that.acessibilidade.autoContraste = true;
+						$('#btnAutoContraste .text').html('Ativado');
+						$('#btnAutoContraste').attr('aria-label','Alto-contrate ativado').attr('aria-selected',true);
+						if (clicouBotao == true) {
+							$('#stage #interface .superior').css('margin-left','-1px');
+						}
+					}
+					$('#btnAutoContraste .checkbox').attr('aria-checked',that.acessibilidade.autoContraste);
+					$('#stage').attr('data-autocontraste',that.acessibilidade.autoContraste);
+				}
+			} );
+
+			$('#btnAutoContrasteLuz2').unbind('keydown tap').bind('keydown tap', function(e)
+			{
+				if (e.keyCode === 13 || e.type === 'tap') {
+					if( that.acessibilidade.autoContraste ){
+						that.acessibilidade.autoContraste = false;
+						$('#btnAutoContraste .text').html('Desativado');
+						$('#btnAutoContraste').attr('aria-label','Alto-contrate desativado').attr('aria-selected',false);
+						$('#stage #interface .superior').css('margin-left','0px');
+					}else{
+						that.acessibilidade.autoContraste = true;
+						$('#btnAutoContraste .text').html('Ativado');
+						$('#btnAutoContraste').attr('aria-label','Alto-contrate ativado').attr('aria-selected',true);
+						if (clicouBotao == true) {
+							$('#stage #interface .superior').css('margin-left','-1px');
+						}
+					}
+					$('#btnAutoContraste .checkbox').attr('aria-checked',that.acessibilidade.autoContraste);
+					$('#stage').attr('data-autocontraste',that.acessibilidade.autoContraste);
+				}
+			} );
+
 		// BOTÃO CLOSED CAPTION
 		$('#btnClosedCaption').unbind('keydown tap').bind('keydown tap', function(e)
 		{
@@ -307,17 +350,32 @@
 		$('#btnReiniciar').unbind('keydown tap').bind('keydown tap', function(e)
 		{
 			if (e.keyCode === 13 || e.type === 'tap') {
-				$('#stage #interface').attr('aria-activedescendant',"btnReiniciar");				
-				if($(window)[0].outerWidth > $(window)[0].outerHeight && $(window)[0].outerHeight < 476){
-					$('.msgRotate').show();
-				}
-				that.btnReiniciarCallback();
-				that.closeAbas(e);
-				//$('#questionSection').scrollTop(0);
+				// $('#stage #interface').attr('aria-activedescendant',"btnReiniciar");				
+				// if($(window)[0].outerWidth > $(window)[0].outerHeight && $(window)[0].outerHeight < 476){
+				// 	$('.msgRotate').show();
+				// }
+				// that.btnReiniciarCallback();
+				// that.closeAbas(e);
+				// //$('#questionSection').scrollTop(0);
 
-				console.log('reniciou')
-				//window.location.reload()
+				// console.log('reniciou')
+				window.location.reload()
 				//document.getElementById("questionSection").scrollIntoView();
+			}
+		} );
+
+		// BOTÃO SAIR
+		$('#btnSairVideo').unbind('keydown tap').bind('keydown tap', function(e)
+		{
+			if (e.keyCode === 13 || e.type === 'tap') {	
+				window.location.reload()
+			}
+		} );
+
+		$('#btnSairVideo2').unbind('keydown tap').bind('keydown tap', function(e)
+		{
+			if (e.keyCode === 13 || e.type === 'tap') {	
+				window.location.reload()
 			}
 		} );
 
@@ -572,6 +630,12 @@
 		$('#popUpVideo2').hide();
 		$('#popUpVideo3').hide();
 		$('#popUpVideo4').hide();
+	},
+	openPopUpCompartilhar: function() {
+		$('#popUpCompartilhar').fadeIn(100);
+	},
+	closePopUpCompartilhar: function() {
+		$('#popUpCompartilhar').hide();
 	},
 	ampliaGaleria: function(e){
 		if (e.keyCode === 13 || e.type === 'tap') {

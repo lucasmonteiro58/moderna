@@ -132,13 +132,16 @@
                 aria-labelledby="btnAcessibilidade"
               >
                 <div id="slideAcessivel">
-                  <a
-                    href="javascript:;"
-                    title="FECHAR"
-                    class="fechar visual2"
-                    aria-hidden="true"
-                    >&lt;</a
-                  >
+                  <div class="title-submenu"> 
+                    <a
+                      href="javascript:;"
+                      title="FECHAR"
+                      class="fechar visual2"
+                      aria-hidden="true"
+                      >&lt;</a
+                    >
+                    <div class="text-submenu">  <i class="icon icon-acessibilidade icon-submenu"></i> <span>Acessibilidade</span></div>
+                  </div>
                   <div class="scrollbar">
                     <div class="track">
                       <div class="thumb"><div class="end"></div></div>
@@ -339,6 +342,7 @@
                 aria-labelledby="btnAjuda"
               >
                 <div class="content">
+                <div class="title-submenu"> 
                   <a
                     href="javascript:;"
                     title="FECHAR"
@@ -346,6 +350,9 @@
                     aria-hidden="true"
                     >&lt;</a
                   >
+                  <div class="text-submenu">  <i class="icon icon-ajuda icon-submenu"></i> <span>Ajuda</span></div>
+                </div>
+                  
                   <div class="scrollbar">
                     <div class="track">
                       <div class="thumb"><div class="end"></div></div>
@@ -384,15 +391,29 @@
                   <div class="viewport" tabindex="0">
                     <div class="overview"></div>
                   </div>
-                  <a
-                    href="javascript:;"
-                    title="FECHAR"
-                    class="fechar visual2"
-                    aria-hidden="true"
-                    >&lt;</a
-                  >
+                  <div class="title-submenu"> 
+                    <a
+                      href="javascript:;"
+                      title="FECHAR"
+                      class="fechar visual2"
+                      aria-hidden="true"
+                      >&lt;</a
+                    >
+                    <div class="text-submenu">  <i class="icon icon-creditos icon-submenu"></i> <a>Créditos</a></div>
+                  </div>
                 </div>
               </div>
+            </li>
+
+
+            <li class="btn">
+              <button
+                id="btnCompartilhar"
+                onclick="InterfaceController.openPopUpCompartilhar()"
+              >
+                <i class="icon icon-compartilhar"></i> <b>Compatilhar</b>
+              </button>
+              
             </li>
           </ul>
           <div class="filtro displayNone"></div>
@@ -466,13 +487,13 @@
             <img id="moldura" src="" />
             <div id="contVideo">
               <div class="video-left-content">
-								<div class="button-sair"></div>
-								<div class="text">SAIR</div>
+								<div id="btnSairVideo" class="button-sair"></div>
+								<div id="btnSairVideo2" class="text">SAIR</div>
 							</div>
               <video id="video" data-idvideo="#video"></video>
               <div class="video-right-content">
-								<div class="button-luz"></div>
-								<div class="text">LUZ</div>
+								<div id="btnAutoContrasteLuz" class="button-luz"></div>
+								<div id="btnAutoContrasteLuz2" class="text">LUZ</div>
 							</div>
               <!-- <img id='posterVideo' class='abs' src='' width='846' height='476'/> -->
               <!--div class='video' role='button' aria-label='Reiniciar' tabindex='0'></div-->
@@ -577,6 +598,19 @@
                 Rever a explicação completa
               </button>
               <button class="btn2">Sair da questão</button>
+            </section>
+          </div>
+        </div>
+        <div id="popUpCompartilhar" class="displayNone">
+          <div class="popUpCompartilhar">
+            <section>
+              <div class="fechar_popup" onclick="InterfaceController.closePopUpCompartilhar()"></div>
+             <div class="title-compartilhe">Compartilhe com seus amigos!</div>
+             <div class="link"> <svg data-v-4d521fc4="" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link feather__content"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg> 
+              https://moderna-prototipo-v2.netlify.app/
+            </div>
+             <button> <svg data-v-4d521fc4="" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-link feather__content"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+              COPIAR</button>
             </section>
           </div>
         </div>

@@ -23,7 +23,7 @@
 	'www.moderna.com.br</p>'+
 	'<p>Produzido no Brasil</p>';
 
-Textos.ajuda = '<p>Mitose é um tipo de divisão celular que forma duas células-filhas geneticamente idênticas à célula-mãe. Nas samambaias, a mitose ocorre no gametófito haploide para a produção de gametas também haploides. Além da formação de gametas, esse processo é responsável por produzir células para o crescimento e a regeneração da planta.</p>';
+Textos.ajuda = '<p>Eiusmod est sint pariatur tempor. Laboris duis id laborum esse labore qui. Aliqua id dolore consectetur ad. Officia esse elit ex adipisicing aliquip ut eu velit. Aliquip aute sint et consequat labore mollit irure dolor duis veniam cillum. Fugiat occaecat do mollit est occaecat et proident sint. Aliqua ullamco fugiat deserunt esse esse amet consequat non magna sit nisi sunt sint cupidatat. Dolor minim cupidatat id nisi laboris. Quis ut nulla qui duis excepteur ad deserunt enim. Ea in tempor eiusmod proident cillum amet cillum ex.</p>';
 
 Textos.feedback = '<p>Texto de exemplo para ilustrar o que pode aparecer nesta janela.</p>';
 

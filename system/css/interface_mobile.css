@@ -24,6 +24,11 @@
     height: 343px;
   }
 
+ 
+  #areaVideo #contVideo {
+    background-color: transparent;
+  }
+
   .decoration_1 {
     width: 277px;
     height: 272px;
@@ -143,6 +148,27 @@
     width: 197px;
     height: 163px;
   }
+
+  .popUpCompartilhar section {
+    width: 90vw;
+  }
+
+  .popUpCompartilhar section .title-compartilhe {
+    width: 80%;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .popUpCompartilhar section .link {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+
+  .popUpCompartilhar section button {
+    font-size: 16px;
+  }
+
 
   .decoration_2 {
     width: 96px;
@@ -390,6 +416,10 @@
   .mejs-captions-layer {
     width: 100% !important;
     height: 100% !important;
+  }
+
+  #areaVideo #contVideo {
+    background-color: transparent;
   }
   #areaVideo #contVideo,
   #stage #areaVideo .video {

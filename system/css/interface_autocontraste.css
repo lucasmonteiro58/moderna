@@ -261,6 +261,32 @@
   /* border-bottom: #dee7e8 4px solid; */
 }
 
+#stage[data-autocontraste="true"] #interface .lateral .btn button > b {
+  color: white;
+}
+
+#stage[data-autocontraste="true"] #interface .lateral .btn .icon {
+  filter: brightness(0) invert(1);
+}
+
+#stage[data-autocontraste="true"] #interface .lateral .btn:hover .icon {
+  filter: brightness(0)
+}
+
+#stage[data-autocontraste="true"] #interface .lateral .btn .icon-submenu {
+  filter: brightness(0) invert(1)  !important;
+}
+
+#stage[data-autocontraste="true"] #interface .lateral .btn div div .title-submenu {
+ color: white;
+}
+
+#stage[data-autocontraste="true"]  #interface .logo_supeior {
+  background: url(img/logo-moderna-autocontraste.png) no-repeat;
+}
+
+
+
 #OEDlog {
   position: absolute;
   bottom: 0;

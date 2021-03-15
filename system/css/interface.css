@@ -470,10 +470,11 @@ button {
   position: relative;
   width: 310px;
   height: 55px;
-  display: block;
+  display: flex;
+  align-items: center;
   background: transparent;
   border: none;
-  padding-left: 55px;
+  padding-left: 10px;
   text-align: left;
   cursor: pointer;
 }
@@ -488,21 +489,18 @@ button {
   background: #e7e7e7;
 }
 #stage #interface .lateral .btn .icon {
-  width: 55px;
-  height: 55px;
-  position: absolute;
-  background: url(img/sprite.png) no-repeat;
+  width: 36px;
+  height: 26px;
   text-indent: -5000px;
   display: block;
-  top: 0;
-  left: 0;
-  transform: scale(0.8);
+  transform: scale(0.9);
 }
 #stage #interface .lateral .btn button > b {
   font-family: "sourceSans";
   font-size: 20px;
   line-height: 16px;
   color: #4a462a;
+  margin-left: 5px;
 }
 #stage #interface .lateral .btn:hover button > b,
 #stage #interface .lateral .btn.hover button > b {
@@ -632,6 +630,7 @@ button {
 }
 #stage #interface .boxTexto .fechar {
   visibility: visible;
+  transform: scale(0.7);
 }
 #stage #interface .boxTexto .content {
   position: relative;
@@ -641,6 +640,7 @@ button {
   height: 100%;
   background: #ffffff;
   overflow: hidden;
+  padding-top: 30px;
 }
 #stage #interface .boxTexto .viewport {
   height: calc(100% - 115px);
@@ -700,7 +700,7 @@ button {
 }
 #stage #interface #informacoes .viewport,
 #stage #interface #informacoes .scrollbar {
-  top: 55px;
+  top: 85px;
   position: absolute;
 }
 
@@ -709,6 +709,7 @@ button {
 }
 #stage #interface #ajuda p {
   font-size: 17px;
+  font-family: sourceSans;
 }
 
 #stage #interface #acessibilidade {
@@ -722,6 +723,7 @@ button {
   background: #fff;
   position: absolute;
   overflow: hidden;
+  padding-top: 30px;
 }
 
 #stage #interface #acessibilidade .content {
@@ -733,6 +735,7 @@ button {
 
 #stage #interface #acessibilidade .viewport {
   height: calc(100% - 115px);
+  color: #4a462a !important;
 }
 #stage #interface #acessibilidade .scrollbar {
   z-index: 1;
@@ -1511,8 +1514,28 @@ button {
   height: 476px;
 }
 
+.title-submenu {
+  display: flex;
+  align-items: center;
+  color: #4a462a;
+}
+
+.title-submenu .text-submenu {
+  font-family: "sourceSans";
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+}
+
+.title-submenu .text-submenu .icon {
+  position: initial !important;
+  margin-left: -10px;
+}
+
 #areaVideo #contVideo {
   display: flex;
+  background-color: white;
+  border-radius: 25px;
 }
 
 #areaVideo #contVideo .video-left-content {
@@ -1586,7 +1609,9 @@ button {
   z-index: 300;
 }
 
-.popUpVideo {
+
+
+.popUpVideo, .popUpCompartilhar {
   z-index: 101;
   position: absolute;
   width: 100%;
@@ -1598,8 +1623,25 @@ button {
   background-color: #00000059;
 }
 
+.popUpCompartilhar  {
+  z-index: 200;
+}
 .popUpVideo section {
   width: 600px;
+  height: 300px;
+  background-color: white;
+  box-shadow: 1px 0 6px 0 #9e9e9e;
+  border-radius: 2vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  position: relative;
+}
+
+.popUpCompartilhar section {
+  width: 486px;
   height: 300px;
   background-color: white;
   box-shadow: 1px 0 6px 0 #9e9e9e;
@@ -1634,6 +1676,45 @@ button {
   filter: brightness(60%);
   transform: scale(0.8);
   cursor: pointer;
+}
+
+.popUpCompartilhar section .fechar_popup {
+  top: 5px;
+  right: 6px;
+  position: absolute;
+  height: 55px;
+  width: 55px;
+  background: url(img/sprite.png) no-repeat;
+  background-position: -135px -1px;
+  filter: brightness(60%);
+  transform: scale(0.8);
+  cursor: pointer;
+}
+
+.popUpCompartilhar section .title-compartilhe {
+  font-family: sourceSansBold;
+  font-size: 25px;
+  color: #4a462a;
+  margin-bottom: 20px;
+}
+
+.popUpCompartilhar section .link{
+  background-color: #efefef;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 18px;
+  color: #4a462a;
+}
+
+.popUpCompartilhar section button{
+  margin-top: 10px;
+  font-family: sourceSansBold;
+  font-size: 20px;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #0087c2;
+  border: none;
+  border-radius: 14px;
 }
 
 .popUpVideo section .explicacao {
@@ -1677,4 +1758,60 @@ button {
   background-color: #0087c2;
   border: none;
   border-radius: 14px;
+}
+
+.icon-compartilhar {
+  background: url(img/icons/compartilhar.png) no-repeat  !important;
+  margin-right: 7px;
+  transform: scale(0.7) !important;
+}
+
+.icon-creditos  {
+  background: url(img/icons/creditos.png) no-repeat  !important;
+  width: 45px  !important;
+  height: 37px !important;
+  transform: scale(0.7) !important;
+  margin-left: -7px;
+  margin-right: 7px;
+}
+
+.icon-ajuda {
+  background: url(img/icons/ajuda.png) no-repeat  !important;
+  width: 32px  !important;
+  height: 32px !important;
+  transform: scale(0.7) !important;
+  margin-right: 12px;
+}
+
+.icon-acessibilidade {
+  background: url(img/icons/acessibilidade.png) no-repeat  !important;
+  width: 33px  !important;
+  height: 33px !important;
+  transform: scale(0.7) !important;
+  margin-right: 7px;
+}
+
+.btn [data-status="on"] .icon.icon-som {
+  background: url(img/icons/som-on.png) no-repeat  !important;
+  width: 33px  !important;
+  height: 33px !important;
+  transform: scale(0.7) !important;
+  margin-right: 7px;
+}
+
+.btn [data-status="off"] .icon.icon-som {
+  background: url(img/icons/som-off.png) no-repeat  !important;
+  width: 35px  !important;
+  height: 33px !important;
+  transform: scale(0.7) !important;
+  margin-right: 7px;
+}
+
+.icon-reiniciar {
+  background: url(img/icons/reiniciar.png) no-repeat  !important;
+  width: 33px  !important;
+  height: 33px !important;
+  transform: scale(0.7) !important;
+  margin-right: 7px;
+  margin-top: 4px;
 }
