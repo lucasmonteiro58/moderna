@@ -1,0 +1,475 @@
+#stage[data-luz="true"] #btnOpcoes {
+  background-image: url(img/sprite_autocontraste.png);
+}
+
+#stage[data-luz="true"] #btnOpcoes[aria-expanded="false"] {
+  border-left: none;
+}
+
+#stage[data-luz="true"] #interface .superior {
+  background:  #1a180e;
+  /* border-bottom: 1px solid #fff; */
+  border-right: 1px solid #fff;
+  height: 54px;
+  color: #fff;
+  margin-left: 0px;
+}
+
+#stage[data-luz="true"] #interface .lateral {
+  background:  #1a180e;
+  border-right: 1px solid #fff;
+}
+
+#stage[data-luz="true"] #interface .lateral .btn:hover {
+  background: #fffd42;
+}
+#stage[data-luz="true"] #interface .lateral .btn.hover {
+  background: #fffd42;
+}
+#stage[data-luz="true"] #interface .lateral .btn .icon {
+  background-image: url(img/sprite_autocontraste.png);
+}
+#stage[data-luz="true"] #interface .lateral .btn:hover button > b,
+#stage[data-luz="true"] #interface .lateral .btn.hover button > b {
+  color: #000;
+}
+
+#stage[data-luz="true"] #interface .boxTexto {
+  color: #fff;
+}
+
+#stage[data-luz="true"] #interface .boxTexto .content {
+  background:  #1a180e;
+  border-right: 1px solid #fff;
+  margin-left: -1px;
+}
+
+#stage[data-luz="true"] #interface .boxTexto .track {
+  background:  #1a180e;
+  border: 1px solid #fff;
+}
+#stage[data-luz="true"] #interface .boxTexto .thumb {
+  background: #fff;
+}
+#stage[data-luz="true"] #interface .boxTexto h3 {
+  color: #fff;
+}
+
+#stage[data-luz="true"] #interface #informacoes span {
+  background-image: url(img/logos_autocontraste.png);
+}
+
+#stage[data-luz="true"] #interface #acessibilidade .content {
+  margin-left: 0px;
+  border-right: 0px solid #fff;
+}
+
+#stage[data-luz="true"]
+  #interface
+  #acessibilidade
+  .content:last-of-type {
+  margin-left: 0px;
+}
+#stage[data-luz="true"] #interface #acessibilidade #slideAcessivel {
+  background:  #1a180e;
+  border-right: 1px solid #fff;
+  margin-left: -1px;
+}
+
+#stage[data-luz="true"] #interface #acessibilidade .bloco h4,
+#stage[data-luz="true"] #interface #acessibilidade .bloco label {
+  color: #fff;
+}
+
+#stage[data-luz="true"] #interface #acessibilidade .bloco label {
+  color: #fff;
+}
+#stage[data-luz="true"]
+  #interface
+  #acessibilidade
+  .bloco
+  label.disabled {
+  color: #b0b0b0;
+}
+#stage[data-luz="true"]
+  #interface
+  #acessibilidade
+  .bloco
+  label
+  .checkbox
+  i {
+  background:  #1a180e;
+}
+
+#stage[data-luz="true"]
+  #interface
+  #acessibilidade
+  .bloco
+  label
+  .checkbox[aria-checked="true"] {
+  background: #fffd42;
+}
+#stage[data-luz="true"]
+  #interface
+  #acessibilidade
+  .bloco
+  label
+  .radio {
+  background-image: url(img/sprite_autocontraste.png);
+}
+#stage[data-luz="true"]
+  #interface
+  #acessibilidade
+  .bloco
+  label
+  .radio[aria-checked="false"] {
+  background: none;
+}
+#stage[data-luz="true"]
+  #interface
+  #acessibilidade
+  .bloco
+  label.disabled
+  .radio[aria-checked="true"] {
+  background: none;
+}
+
+#stage[data-luz="true"] #interface .boxGaleria {
+  background:  #1a180e;
+}
+
+#stage[data-luz="true"] #interface .boxGaleria figure figcaption {
+  color: #fff;
+}
+
+#stage[data-luz="true"] #interface .boxGaleria .track {
+  background:  #1a180e;
+  border: 1px solid #fff;
+}
+#stage[data-luz="true"] #interface .boxGaleria .thumb {
+  background: #fff;
+}
+
+#stage[data-luz="true"] #galeria section h4,
+#stage[data-luz="true"] .lettering {
+  color: #fff;
+  background:  #1a180e;
+  border: 1px solid #fff;
+  border-left: none;
+  padding: 14px 15px 10px 15px;
+}
+#stage[data-luz="true"] #galeria section h4.invert,
+#stage[data-luz="true"] .lettering.invert,
+#stage[data-luz="true"] #galeria section .legenda.invert {
+  background:  #1a180e;
+}
+#stage[data-luz="true"] #galeria section .legenda,
+#stage[data-luz="true"] .legenda {
+  color: #fff;
+  background:  #1a180e;
+  border: 1px solid #fff;
+  border-right: none;
+}
+
+#stage[data-luz="true"] #galeria section .btMaisMenos {
+  background:  #1a180e;
+  color: #fff;
+  border: 1px solid #fff;
+}
+#stage[data-luz="true"] #galeria section .btMaisMenos::after {
+  content: "";
+  background-image: url(img/sprite_autocontraste.png);
+}
+#stage[data-luz="true"] #galeria section .texto {
+  background:  #1a180e;
+  border-left: 1px solid #fff;
+  color: #fff;
+}
+#stage[data-luz="true"] #galeria section .texto::before {
+  content: "";
+  background:  #1a180e;
+  border-left: 1px solid #fff;
+}
+#stage[data-luz="true"] #galeria section .texto::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 557px;
+  border-bottom: 1px solid #fff;
+}
+#stage[data-luz="true"] #galeria section .texto p span {
+  color: #fffd42;
+}
+#stage[data-luz="true"] .fechar {
+  background-image: url(img/sprite_autocontraste.png);
+}
+#stage[data-luz="true"] .visual2 {
+  background: url(img/sprite.png) no-repeat;
+  background-position: -571px -182px;
+  top: -1px;
+}
+
+#stage[data-luz="true"] .stNvGaleria {
+  background-image: url(img/sprite_autocontraste.png);
+  border: 1px solid #fff;
+}
+#stage[data-luz="true"] .stNvGaleria.stPrev {
+  background-position: -450px -278px;
+  left: 0;
+}
+#stage[data-luz="true"] .stNvGaleria.stNext {
+  background-position: -505px -278px;
+  right: 0;
+}
+
+#stage[data-luz="true"] .btnZoom {
+  background-color:  #1a180e;
+  background-image: url(img/sprite_autocontraste.png);
+  border: 1px solid #fff;
+}
+#stage[data-luz="true"] .btnZoom[data-status="mais"] {
+  background-position: -191px -138px;
+}
+#stage[data-luz="true"] .btnZoom[data-status="menos"] {
+  background-position: -191px -189px;
+}
+
+#stage[data-luz="true"] .btnPadrao {
+  background: #fff;
+  color: #000;
+}
+
+#stage[data-luz="true"] .feedback section {
+  background:  #1a180e;
+  border: 1px solid #fff;
+}
+#stage[data-luz="true"] .feedback section article {
+  color: #fff;
+}
+
+#stage[data-luz="true"] .feedback section article h3 {
+  color: #fff;
+}
+
+#stage[data-luz="true"] .botao.fechar {
+  background-image: none;
+  border: 0;
+  /* border-bottom: #dee7e8 4px solid; */
+}
+
+#stage[data-luz="true"] #interface .lateral .btn button > b {
+  color: white;
+}
+
+#stage[data-luz="true"] #interface .lateral .btn .icon {
+  filter: brightness(0) invert(1);
+}
+
+#stage[data-luz="true"] #interface .lateral .btn:hover .icon {
+  filter: brightness(0)
+}
+
+#stage[data-luz="true"] #interface .lateral .btn .icon-submenu {
+  filter: brightness(0) invert(1)  !important;
+}
+
+#stage[data-luz="true"] #interface .lateral .btn div div .title-submenu {
+ color: white;
+}
+
+#stage[data-luz="true"]  #interface .logo_supeior {
+  background: url(img/logo-moderna-autocontraste.png) no-repeat;
+}
+
+
+
+#OEDlog {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 400px;
+  height: 100px;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px dashed #666;
+  overflow: auto;
+}
+#OEDlog span {
+  display: block;
+}
+
+
+#stage[data-luz="true"] #questionSection {
+  background:  #1a180e;
+  color: white !important;
+}
+
+#stage[data-luz="true"] #questionSection .questions_items {
+  border: 2px solid rgba(255, 255, 255, 0.761);
+}
+
+#stage[data-luz="true"]
+  #questionSection
+  .question_fotter
+  .qual_item
+  .items
+  .item {
+  background-color: white;
+  color: #000;
+}
+
+#stage[data-luz="true"]
+  #questionSection
+  .question_fotter
+  .qual_item
+  .items
+  .selected {
+  background-color: rgb(138, 138, 138);
+  color: #000;
+}
+
+#stage[data-luz="true"]
+  #questionSection
+  .question_fotter
+  .buttom
+  button {
+  background-color: #fbff00;
+  color: #000;
+}
+
+
+
+#stage[data-luz="true"] #interatividade {
+  background:  #1a180e;
+  color: white !important;
+}
+
+#stage[data-luz="true"]
+  #interatividade
+  #areaVideo
+  #contVideo
+  .video-left-content {
+  background-color: #1a180e
+}
+
+#stage[data-luz="true"]
+  #interatividade
+  #areaVideo
+  #contVideo
+  .mobile-aviso
+  .texto-aviso {
+  color: white;
+}
+
+#stage[data-luz="true"]
+  #interatividade
+  #areaVideo
+  #contVideo
+  .mobile-aviso
+  .image-aviso{
+  filter: invert(1) brightness(300%);
+}
+
+
+#stage[data-luz="true"]
+  #interatividade
+  #areaVideo
+  #contVideo
+  .video-right-content {
+  background-color: #1a180e
+}
+
+#stage[data-luz="true"]
+  #interatividade
+  #areaVideo
+  #contVideo
+  .video-left-content
+  .text {
+  color: white;
+}
+
+#stage[data-luz="true"]
+  #interatividade
+  #areaVideo
+  #contVideo
+  .video-left-content
+  .button-sair {
+  filter: invert(100%) brightness(200%);
+}
+
+#stage[data-luz="true"]
+  #interatividade
+  #areaVideo
+  #contVideo
+  .video-right-content
+  .button-luz {
+  filter: invert(100%) brightness(200%);
+}
+
+#stage[data-luz="true"]
+  #interatividade
+  #areaVideo
+  #contVideo
+  .video-right-content
+  .text {
+  color: white;
+}
+
+#stage[data-luz="true"] div .popUpVideo section {
+  background-color:  #1a180e;
+}
+
+#stage[data-luz="true"] div .popUpVideo section button {
+  color: #1a180e
+  background-color: #fbff00;
+}
+
+#stage[data-luz="true"]
+  div
+  .popUpVideo
+  section
+  .buttton-items
+  button {
+  color: #1a180e
+  background-color: #ffffff;
+}
+
+#stage[data-luz="true"] div .popUpVideo section .explicacao {
+  color: rgb(255, 255, 255);
+}
+
+#stage[data-luz="true"] div .popUpCompartilhar section {
+  background-color:  #1a180e;
+}
+
+#stage[data-luz="true"] div .popUpCompartilhar section .title-compartilhe{
+  color: white;
+}
+
+#stage[data-luz="true"] div .popUpCompartilhar section .link{
+  color: black;
+  background-color: white;
+}
+
+#stage[data-luz="true"] div .popUpCompartilhar section button{
+ background-color: yellow;
+ color: black;
+}
+
+#stage[data-luz="true"] div .popUpRotacao section {
+  background-color:  #1a180e;
+}
+
+#stage[data-luz="true"] div .popUpRotacao section .title-compartilhe{
+  color: white;
+}
+
+#stage[data-luz="true"] div .popUpRotacao section button{
+  background-color: yellow;
+  color: black;
+ }
+
+ #stage[data-luz="true"] div .popUpRotacao section .image_rotation_popup{
+  filter: invert(1);
+ }
