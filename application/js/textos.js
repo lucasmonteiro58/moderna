@@ -21,7 +21,8 @@
 	'Rua Padre Adelino, 758 – Belenzinho<br/>'+
 	'São Paulo, SP – Brasil – CEP 03303-904<br/>'+
 	'www.moderna.com.br</p>'+
-	'<p>Produzido no Brasil</p>';
+	'<p>Produzido no Brasil</p>' +
+	'</br></br></br></br></br></br></br>';
 
 Textos.ajuda = '<p>Eiusmod est sint pariatur tempor. Laboris duis id laborum esse labore qui. Fugiat occaecat do mollit est occaecat et proident sint. Aliqua ullamco fugiat deserunt esse esse amet consequat non magna sit nisi sunt sint cupidatat. Dolor minim cupidatat id nisi laboris. Quis ut nulla qui duis excepteur ad deserunt enim. Ea in tempor eiusmod proident cillum amet cillum ex.</p>';
 
