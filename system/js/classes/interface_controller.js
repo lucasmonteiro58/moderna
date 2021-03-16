@@ -241,6 +241,30 @@
 				}
 			} );
 
+			$('#btnAutoContrasteLuz3').unbind('keydown tap').bind('keydown tap', function(e)
+			{
+				if (e.keyCode === 13 || e.type === 'tap') {
+					if( that.acessibilidade.luz ){
+						that.acessibilidade.luz = false;
+					}else{
+						that.acessibilidade.luz = true;
+					}
+					$('#stage').attr('data-luz',that.acessibilidade.luz);
+				}
+			} );
+
+			$('#btnAutoContrasteLuz4').unbind('keydown tap').bind('keydown tap', function(e)
+			{
+				if (e.keyCode === 13 || e.type === 'tap') {
+					if( that.acessibilidade.luz ){
+						that.acessibilidade.luz = false;
+					}else{
+						that.acessibilidade.luz = true;
+					}
+					$('#stage').attr('data-luz',that.acessibilidade.luz);
+				}
+			} );
+
 		// BOTÃO CLOSED CAPTION
 		$('#btnClosedCaption').unbind('keydown tap').bind('keydown tap', function(e)
 		{
@@ -362,6 +386,22 @@
 				window.location.reload()
 			}
 		} );
+
+		$('#btnSairVideo3').unbind('keydown tap').bind('keydown tap', function(e)
+		{
+			if (e.keyCode === 13 || e.type === 'tap') {	
+				window.location.reload()
+			}
+		} );
+
+		$('#btnSairVideo4').unbind('keydown tap').bind('keydown tap', function(e)
+		{
+			if (e.keyCode === 13 || e.type === 'tap') {	
+				window.location.reload()
+			}
+		} );
+
+
 
 		// INICIAR A GALERIA DE IMAGENS
 		that.iniciaGaleria();
@@ -563,6 +603,9 @@
 	},
 	closeQuestion: function() {
 		$('#questionSection').hide();
+	},
+	fecharReiniciar: function() {
+		window.location.reload()
 	},
 	openVideoIntroducao: function() {
 		InterfaceController.closeQuestion();
@@ -1090,7 +1133,7 @@ function tamanhoAbaSuperiorOpen(){
 	if ($(window).width() <= 320 || $(window).width() <= 425 && clicouBotao == true) {
 		TweenMax.to( "#stage #interface .superior", .6, { width:'100%', delay: .1, ease: Power2.easeOut } );
 	}else{
-		TweenMax.to( "#stage #interface .superior", .6, { width: 425, delay: .1, ease: Power2.easeOut } );
+		TweenMax.to( "#stage #interface .superior", .6, { width: 350, delay: .1, ease: Power2.easeOut } );
 	}
 
 	if (InterfaceController.acessibilidade.autoContraste == true) {
@@ -1105,7 +1148,7 @@ function tamanhoAbaSuperiorClose(){
 	if ($(window).width() <= 320) {
 		TweenMax.to( "#stage #interface .superior", .6, { width:'100%', ease: Power2.easeOut } );
 	}else{
-		TweenMax.to( "#stage #interface .superior", .6, { width: 320, ease: Power2.easeOut } );
+		TweenMax.to( "#stage #interface .superior", .6, { width: 350, ease: Power2.easeOut } );
 	}
 
 	$('#stage #interface .superior').css('margin-left','0px');

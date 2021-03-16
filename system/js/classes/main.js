@@ -175,16 +175,16 @@ $(window).resize(function(){
 		if (clicouBotao == true) {
 			$('#stage #interface .superior').css('width','100%');
 		}else{
-			$('#stage #interface .superior').css('width','320px');
+			$('#stage #interface .superior').css('width','350px');
 		}
    }else if($(window).width() <= 320){
    		$('#stage #interface .superior').css('width','100%');
    }else{
 		InterfaceController.responsivoPC();
 		if (clicouBotao == true) {
-			$('#stage #interface .superior').css('width','425px');
+			$('#stage #interface .superior').css('width','350px');
 		}else{
-			$('#stage #interface .superior').css('width','320px');
+			$('#stage #interface .superior').css('width','350px');
 		}
    }
 });

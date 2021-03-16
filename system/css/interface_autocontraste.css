@@ -504,3 +504,11 @@
  #stage[data-autocontraste="true"] div .popUpRotacao section .image_rotation_popup{
   filter: invert(1);
  }
+
+ #stage[data-autocontraste="true"]
+ #interatividade
+ #areaVideo
+ #contVideo
+ .content_mobile_video {
+ filter: invert(1) brightness(300%);
+}

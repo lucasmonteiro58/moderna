@@ -18,25 +18,26 @@
   }
 }
 
-@media only screen and (max-width: 769px) {
-  .decoration_0 {
-    width: 315px;
-    height: 343px;
-  }
 
- 
+@media only screen and (max-width: 813px) {
+
   #areaVideo #contVideo {
     background-color: transparent;
   }
 
+  .decoration_0 {
+    width: 281px;
+    height: 309px;
+  }
+  
   .decoration_1 {
-    width: 277px;
-    height: 272px;
+    width: 213px;
+    height: 198px;
   }
 
   .decoration_2 {
-    width: 119px;
-    height: 96px;
+    width: 94px;
+    height: 78px;
   }
 
   .decoration_3 {
@@ -45,9 +46,9 @@
   }
 
   #stage #mc_logo_intro {
-    left: -9px;
+    left: -25px;
     top: 1px;
-    transform: scale(0.5);
+    transform: scale(0.45);
   }
 
   .question section {
@@ -140,7 +141,7 @@
 
 @media only screen and (max-width: 641px) {
   .decoration_0 {
-    width: 240px;
+    width: 221px;
     height: 226px;
   }
 
@@ -196,9 +197,9 @@
   }
 
   #stage #mc_logo_intro {
-    left: -35px;
+    left: -40px;
     top: 1px;
-    transform: scale(0.4);
+    transform: scale(0.38);
   }
 
   .question section .question_fotter .qual_item .items {
@@ -362,7 +363,7 @@
   }
 
   .openMenu {
-    left: 296px !important;
+    left: 83% !important;
   }
 
   /* ////////////////////////////////////////////////////////////////////// */
@@ -466,7 +467,7 @@
 
   #areaVideo #contVideo {
     background-color: transparent;
-    transform: scale(0.7);
+    /* transform: scale(0.7); */
   }
 
   .popUpVideo section { 
@@ -573,28 +574,75 @@
 
 @media only screen and (max-width: 500px) {
   .decoration_0 {
-    width: 100%;
-    height: 226px;
-    background: url(img/mobile-pt1.png) no-repeat left top / 100% 100%;
+    width: 235px;
+    height: 242px;
+    background: url(img/web-up-left-alt.png) no-repeat left top / 100% 100%;
+    /* background: url(img/mobile-pt1.png) no-repeat left top / 100% 100%; */
   }
   .decoration_1 {
-    width: 100%;
-    height: 111px;
-    background: url(img/mobile-pt2.png) no-repeat left top / 100% 100%;
+    width: 198px;
+    height: 166px;
+    /* background: url(img/mobile-pt2.png) no-repeat left top / 100% 100%; */
   }
+
+  .decoration_2 {
+    width: 92px;
+    height: 67px;
+  }
+
+  .content_mobile_video {
+    position: absolute;
+    top: calc(50% + 140px) !important;
+    left: 0 !important;
+    transform: translateY(-50%);
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 60%;
+  }
+
+  .content_mobile_video div .button-sair{
+    margin-top: 15px;
+    height: 30px;
+    width: 30px;
+    background: url(img/btn-sair.png) no-repeat;
+    cursor: pointer;
+    transform: scale(0.7);
+  }
+
+  .content_mobile_video div .button-luz{
+    margin-top: 10px;
+    height: 42px;
+    width: 40px;
+    background: url(img/luz.png) no-repeat;
+    transform: scale(0.6);
+    cursor: pointer;
+  }
+
+  .content_mobile_video .left-content .text{
+    font-family: "sourceSansBold";
+    color: #4a462a;
+    cursor: pointer;
+    margin-top: -2px;
+  }
+
+  .content_mobile_video .right-content .text{
+    font-family: "sourceSansBold";
+    color: #4a462a;
+    margin-top: -9px;
+    margin-left: 4px;
+    cursor: pointer;
+  }  
+
   #stage #mc_titulo_intro {
     top: 60%;
     font-size: 26px;
   }
 
-  .decoration_2,
-  .decoration_3 {
-    display: none;
-  }
   #stage #mc_logo_intro {
-    transform: scale(0.45);
-    left: -16px;
-    top: -2px;
+    transform: scale(0.4);
+    left: -44px;
+    top: -1px;
   }
 
   #stage #mc_titulo_intro .sub_titulo {
@@ -727,8 +775,8 @@
   } */
 
   #areaVideo #contVideo {
-    transform: scale(0.7);
-    margin-top: 20px;
+    /* transform: scale(0.7); */
+    /* margin-top: 20px; */
   }
 
   #areaVideo #contVideo .video-left-content {
@@ -740,7 +788,7 @@
   }
 
   .popUpVideo section {
-    width: 72%;
+    width: 88%;
     height: 255px;
   }
 

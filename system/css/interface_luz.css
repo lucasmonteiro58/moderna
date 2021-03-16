@@ -389,6 +389,8 @@
   color: white;
 }
 
+
+
 #stage[data-luz="true"]
   #interatividade
   #areaVideo
@@ -421,7 +423,7 @@
 }
 
 #stage[data-luz="true"] div .popUpVideo section button {
-  color: #1a180e
+  color: #1a180e;
   background-color: #fbff00;
 }
 
@@ -431,7 +433,7 @@
   section
   .buttton-items
   button {
-  color: #1a180e
+  color: #1a180e;
   background-color: #ffffff;
 }
 
@@ -473,3 +475,11 @@
  #stage[data-luz="true"] div .popUpRotacao section .image_rotation_popup{
   filter: invert(1);
  }
+
+ #stage[data-luz="true"]
+  #interatividade
+  #areaVideo
+  #contVideo
+  .content_mobile_video {
+  filter: invert(1) brightness(300%);
+}
