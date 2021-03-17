@@ -813,9 +813,39 @@
   }
 }
 
+@media only screen and (max-width: 1980px) {
+  #areaVideo #contVideo {   
+    transform: scale(1.5);
+  }
+}
+
+@media only screen and (max-width: 1970px) {
+  #areaVideo #contVideo {   
+    transform: scale(1.5);
+  }
+}
+
+@media only screen and (max-width: 1960px) {
+  #areaVideo #contVideo {   
+    transform: scale(1.4);
+  }
+}
+
+@media only screen and (max-width: 1950px) {
+  #areaVideo #contVideo {   
+    transform: scale(1.3);
+  }
+}
+
 @media only screen and (max-width: 1800px) {
   #areaVideo #contVideo {
     transform: scale(1.2);
+  }
+}
+
+@media only screen and (max-width: 1700px) {
+  #areaVideo #contVideo {
+    transform: scale(1.1);
   }
 }
 

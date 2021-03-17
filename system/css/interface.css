@@ -1538,7 +1538,7 @@ button {
   display: flex;
   background-color: white;
   border-radius: 25px;
-  transform: scale(1.6);
+  transform: scale(1.5);
 }
 
 #areaVideo #contVideo .video-left-content {
