@@ -19,7 +19,7 @@
 }
 
 
-@media only screen and (max-width: 813px) {
+@media only screen and (max-width: 824px) {
 
   #areaVideo #contVideo {
     background-color: transparent;
@@ -203,7 +203,7 @@
   }
 
   .question section .question_fotter .qual_item .items {
-    width: 307px;
+    width: 280px;
   }
 
   .question section .question_fotter .qual_item .items .item {
@@ -224,6 +224,10 @@
     height: 63vh;
     padding: 10px 40px;
     overflow-x: none;
+  }
+
+  .question section .question_fotter .qual_item {
+    align-items: center;
   }
 
   .question section .title {
@@ -806,6 +810,18 @@
   .popUpRotacao section {
     width: 90vw;
     height: 345px;
+  }
+}
+
+@media only screen and (max-width: 1800px) {
+  #areaVideo #contVideo {
+    transform: scale(1.2);
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  #areaVideo #contVideo {
+    transform: scale(1);
   }
 }
 
